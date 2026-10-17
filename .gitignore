@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+kit/node_modules/
+
+# Python environments & cache
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local secrets & env
+.env
+
+# Media inbox & outbox (keep directory structure)
+inbox/*
+!inbox/.gitkeep
+outbox/*
+!outbox/.gitkeep
+
+# Render project caches
+kit/video-projects/*/renders/
+kit/video-projects/*/assets/
+kit/video-projects/*/.concat*.txt
+kit/video-projects/*/*.wav
+kit/video-projects/*/*.mp4
+kit/video-projects/*/*.ass
+kit/video-projects/*/*.srt
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db

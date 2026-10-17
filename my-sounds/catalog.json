@@ -1,0 +1,692 @@
+[
+  {
+    "category": "mini-drama",
+    "filename": "heartbeat-stress.mp3",
+    "rel_path": "mini-drama/heartbeat-stress.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/heartbeat-stress.mp3",
+    "duration": 6.9,
+    "size_kb": 108.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "heartbeat-pulse-loop.mp3",
+    "rel_path": "mini-drama/heartbeat-pulse-loop.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/heartbeat-pulse-loop.mp3",
+    "duration": 0.72,
+    "size_kb": 6.3,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "mini-drama",
+    "filename": "cinematic-sub-boom.mp3",
+    "rel_path": "mini-drama/cinematic-sub-boom.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/cinematic-sub-boom.mp3",
+    "duration": 5.38,
+    "size_kb": 42.5,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "mini-drama",
+    "filename": "cinematic-boom-trailer.mp3",
+    "rel_path": "mini-drama/cinematic-boom-trailer.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/cinematic-boom-trailer.mp3",
+    "duration": 11.83,
+    "size_kb": 185.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "cinematic-braam.mp3",
+    "rel_path": "mini-drama/cinematic-braam.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/cinematic-braam.mp3",
+    "duration": 3.04,
+    "size_kb": 47.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "suspense-tension-riser.mp3",
+    "rel_path": "mini-drama/suspense-tension-riser.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/suspense-tension-riser.mp3",
+    "duration": 10.08,
+    "size_kb": 158.3,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "sudden-suspense-hit.mp3",
+    "rel_path": "mini-drama/sudden-suspense-hit.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/sudden-suspense-hit.mp3",
+    "duration": 1.37,
+    "size_kb": 22.4,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "sad-violin-solo.mp3",
+    "rel_path": "mini-drama/sad-violin-solo.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/sad-violin-solo.mp3",
+    "duration": 6.01,
+    "size_kb": 95.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "dramatic-violin-climax.mp3",
+    "rel_path": "mini-drama/dramatic-violin-climax.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/dramatic-violin-climax.mp3",
+    "duration": 8.33,
+    "size_kb": 196.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "dream-harp-flashback.mp3",
+    "rel_path": "mini-drama/dream-harp-flashback.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/dream-harp-flashback.mp3",
+    "duration": 5.5,
+    "size_kb": 86.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "wind-chimes-memory.mp3",
+    "rel_path": "mini-drama/wind-chimes-memory.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/wind-chimes-memory.mp3",
+    "duration": 4.08,
+    "size_kb": 83.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "shop-door-bell.mp3",
+    "rel_path": "mini-drama/shop-door-bell.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/shop-door-bell.mp3",
+    "duration": 3.06,
+    "size_kb": 24.3,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "mini-drama",
+    "filename": "apartment-doorbell.mp3",
+    "rel_path": "mini-drama/apartment-doorbell.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/apartment-doorbell.mp3",
+    "duration": 2.69,
+    "size_kb": 42.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "broken-glass-shatter.mp3",
+    "rel_path": "mini-drama/broken-glass-shatter.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/broken-glass-shatter.mp3",
+    "duration": 1.36,
+    "size_kb": 22.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "heavy-door-slam.mp3",
+    "rel_path": "mini-drama/heavy-door-slam.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/heavy-door-slam.mp3",
+    "duration": 1.83,
+    "size_kb": 29.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "realistic-door-knocking.mp3",
+    "rel_path": "mini-drama/realistic-door-knocking.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/realistic-door-knocking.mp3",
+    "duration": 9.14,
+    "size_kb": 143.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "face-slap.mp3",
+    "rel_path": "mini-drama/face-slap.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/face-slap.mp3",
+    "duration": 1.59,
+    "size_kb": 25.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "punch-impact.mp3",
+    "rel_path": "mini-drama/punch-impact.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/punch-impact.mp3",
+    "duration": 1.53,
+    "size_kb": 24.8,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "shocked-gasp.mp3",
+    "rel_path": "mini-drama/shocked-gasp.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/shocked-gasp.mp3",
+    "duration": 1.42,
+    "size_kb": 23.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "crowd-gasp.mp3",
+    "rel_path": "mini-drama/crowd-gasp.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/crowd-gasp.mp3",
+    "duration": 1.03,
+    "size_kb": 17.1,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "thunder-crack.mp3",
+    "rel_path": "mini-drama/thunder-crack.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/thunder-crack.mp3",
+    "duration": 3.47,
+    "size_kb": 55.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "thunder-rumble.mp3",
+    "rel_path": "mini-drama/thunder-rumble.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/thunder-rumble.mp3",
+    "duration": 7.13,
+    "size_kb": 112.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "cinematic-orchestral-hit.mp3",
+    "rel_path": "mini-drama/cinematic-orchestral-hit.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/cinematic-orchestral-hit.mp3",
+    "duration": 4.35,
+    "size_kb": 94.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "mini-drama",
+    "filename": "cinematic-bass-drop.mp3",
+    "rel_path": "mini-drama/cinematic-bass-drop.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/mini-drama/cinematic-bass-drop.mp3",
+    "duration": 3.31,
+    "size_kb": 52.4,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "pop-clean.mp3",
+    "rel_path": "explainer/pop-clean.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/pop-clean.mp3",
+    "duration": 0.29,
+    "size_kb": 5.1,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "bubble-pop.mp3",
+    "rel_path": "explainer/bubble-pop.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/bubble-pop.mp3",
+    "duration": 0.26,
+    "size_kb": 2.5,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "explainer",
+    "filename": "mouse-click-clean.mp3",
+    "rel_path": "explainer/mouse-click-clean.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/mouse-click-clean.mp3",
+    "duration": 1.44,
+    "size_kb": 23.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "mouse-click-double.mp3",
+    "rel_path": "explainer/mouse-click-double.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/mouse-click-double.mp3",
+    "duration": 3.07,
+    "size_kb": 48.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "keyboard-typing-fast.mp3",
+    "rel_path": "explainer/keyboard-typing-fast.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/keyboard-typing-fast.mp3",
+    "duration": 10.06,
+    "size_kb": 157.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "whoosh-transition-fast.mp3",
+    "rel_path": "explainer/whoosh-transition-fast.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/whoosh-transition-fast.mp3",
+    "duration": 0.98,
+    "size_kb": 24.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "whoosh-transition-cinematic.mp3",
+    "rel_path": "explainer/whoosh-transition-cinematic.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/whoosh-transition-cinematic.mp3",
+    "duration": 2.16,
+    "size_kb": 86.8,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "page-turn-flip.mp3",
+    "rel_path": "explainer/page-turn-flip.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/page-turn-flip.mp3",
+    "duration": 1.2,
+    "size_kb": 19.4,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "paper-crumple.mp3",
+    "rel_path": "explainer/paper-crumple.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/paper-crumple.mp3",
+    "duration": 7.66,
+    "size_kb": 120.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "ding-correct-gameshow.mp3",
+    "rel_path": "explainer/ding-correct-gameshow.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/ding-correct-gameshow.mp3",
+    "duration": 1.27,
+    "size_kb": 20.5,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "ding-bell-chime.mp3",
+    "rel_path": "explainer/ding-bell-chime.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/ding-bell-chime.mp3",
+    "duration": 2.95,
+    "size_kb": 46.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "ding-bell-subtle.mp3",
+    "rel_path": "explainer/ding-bell-subtle.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/ding-bell-subtle.mp3",
+    "duration": 2.95,
+    "size_kb": 46.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "wrong-buzzer.mp3",
+    "rel_path": "explainer/wrong-buzzer.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/wrong-buzzer.mp3",
+    "duration": 1.06,
+    "size_kb": 17.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "error-buzzer.mp3",
+    "rel_path": "explainer/error-buzzer.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/error-buzzer.mp3",
+    "duration": 1.12,
+    "size_kb": 18.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "error-sound-soft.mp3",
+    "rel_path": "explainer/error-sound-soft.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/error-sound-soft.mp3",
+    "duration": 0.99,
+    "size_kb": 8.2,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "explainer",
+    "filename": "cash-register-cha-ching.mp3",
+    "rel_path": "explainer/cash-register-cha-ching.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/cash-register-cha-ching.mp3",
+    "duration": 2.17,
+    "size_kb": 67.8,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "cash-register-drawer.mp3",
+    "rel_path": "explainer/cash-register-drawer.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/cash-register-drawer.mp3",
+    "duration": 2.43,
+    "size_kb": 38.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "apple-pay-chime.mp3",
+    "rel_path": "explainer/apple-pay-chime.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/apple-pay-chime.mp3",
+    "duration": 1.41,
+    "size_kb": 22.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "camera-shutter-flash.mp3",
+    "rel_path": "explainer/camera-shutter-flash.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/camera-shutter-flash.mp3",
+    "duration": 2.02,
+    "size_kb": 32.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "camera-snap-fast.mp3",
+    "rel_path": "explainer/camera-snap-fast.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/camera-snap-fast.mp3",
+    "duration": 0.88,
+    "size_kb": 14.5,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "record-scratch-stop.mp3",
+    "rel_path": "explainer/record-scratch-stop.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/record-scratch-stop.mp3",
+    "duration": 0.78,
+    "size_kb": 12.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "tape-rewind-fast.mp3",
+    "rel_path": "explainer/tape-rewind-fast.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/tape-rewind-fast.mp3",
+    "duration": 0.78,
+    "size_kb": 12.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "digital-glitch.mp3",
+    "rel_path": "explainer/digital-glitch.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/digital-glitch.mp3",
+    "duration": 1.33,
+    "size_kb": 32.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "explainer",
+    "filename": "cinematic-thud-metric.mp3",
+    "rel_path": "explainer/cinematic-thud-metric.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/explainer/cinematic-thud-metric.mp3",
+    "duration": 2.71,
+    "size_kb": 43.2,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "vine-boom.mp3",
+    "rel_path": "us-niche/vine-boom.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/vine-boom.mp3",
+    "duration": 1.25,
+    "size_kb": 20.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "bruh.mp3",
+    "rel_path": "us-niche/bruh.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/bruh.mp3",
+    "duration": 0.82,
+    "size_kb": 13.7,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "dun-dun-dun-brass.mp3",
+    "rel_path": "us-niche/dun-dun-dun-brass.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/dun-dun-dun-brass.mp3",
+    "duration": 5.12,
+    "size_kb": 80.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "metal-pipe-clang.mp3",
+    "rel_path": "us-niche/metal-pipe-clang.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/metal-pipe-clang.mp3",
+    "duration": 2.79,
+    "size_kb": 44.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "taco-bell-bong.mp3",
+    "rel_path": "us-niche/taco-bell-bong.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/taco-bell-bong.mp3",
+    "duration": 1.91,
+    "size_kb": 30.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "spongebob-fail-womp.mp3",
+    "rel_path": "us-niche/spongebob-fail-womp.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/spongebob-fail-womp.mp3",
+    "duration": 3.38,
+    "size_kb": 53.5,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "price-is-right-losing-horn.mp3",
+    "rel_path": "us-niche/price-is-right-losing-horn.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/price-is-right-losing-horn.mp3",
+    "duration": 5.07,
+    "size_kb": 40.6,
+    "sample_rate": 22050,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "anime-wow.mp3",
+    "rel_path": "us-niche/anime-wow.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/anime-wow.mp3",
+    "duration": 4.18,
+    "size_kb": 66.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "awkward-cricket.mp3",
+    "rel_path": "us-niche/awkward-cricket.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/awkward-cricket.mp3",
+    "duration": 4.44,
+    "size_kb": 70.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "mlg-airhorn.mp3",
+    "rel_path": "us-niche/mlg-airhorn.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/mlg-airhorn.mp3",
+    "duration": 2.97,
+    "size_kb": 47.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "windows-xp-error.mp3",
+    "rel_path": "us-niche/windows-xp-error.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/windows-xp-error.mp3",
+    "duration": 0.99,
+    "size_kb": 8.2,
+    "sample_rate": 44100,
+    "channels": 1
+  },
+  {
+    "category": "us-niche",
+    "filename": "among-us-reveal.mp3",
+    "rel_path": "us-niche/among-us-reveal.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/among-us-reveal.mp3",
+    "duration": 4.57,
+    "size_kb": 97.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "sad-violin-meme.mp3",
+    "rel_path": "us-niche/sad-violin-meme.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/sad-violin-meme.mp3",
+    "duration": 4.55,
+    "size_kb": 72.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "rizz-sound.mp3",
+    "rel_path": "us-niche/rizz-sound.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/rizz-sound.mp3",
+    "duration": 1.93,
+    "size_kb": 75.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "undertaker-bell.mp3",
+    "rel_path": "us-niche/undertaker-bell.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/undertaker-bell.mp3",
+    "duration": 4.21,
+    "size_kb": 66.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "omg-hell-nah.mp3",
+    "rel_path": "us-niche/omg-hell-nah.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/omg-hell-nah.mp3",
+    "duration": 10.4,
+    "size_kb": 163.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "discord-ping.mp3",
+    "rel_path": "us-niche/discord-ping.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/discord-ping.mp3",
+    "duration": 0.61,
+    "size_kb": 33.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "iphone-text-notification.mp3",
+    "rel_path": "us-niche/iphone-text-notification.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/iphone-text-notification.mp3",
+    "duration": 2.88,
+    "size_kb": 46.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "emotional-damage.mp3",
+    "rel_path": "us-niche/emotional-damage.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/emotional-damage.mp3",
+    "duration": 3.32,
+    "size_kb": 53.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "fbi-open-up.mp3",
+    "rel_path": "us-niche/fbi-open-up.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/fbi-open-up.mp3",
+    "duration": 2.01,
+    "size_kb": 32.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "us-niche",
+    "filename": "cartoon-slip-fall.mp3",
+    "rel_path": "us-niche/cartoon-slip-fall.mp3",
+    "abs_path": "/home/john/Documents/free247editor/my-sounds/us-niche/cartoon-slip-fall.mp3",
+    "duration": 1.85,
+    "size_kb": 29.6,
+    "sample_rate": 48000,
+    "channels": 2
+  }
+]

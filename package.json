@@ -1,0 +1,20 @@
+{
+  "name": "hermieditor",
+  "version": "1.0.0",
+  "description": "Autonomous AI video editor for Hermes Agent: short-form explainers, vertical mini-dramas, and affiliate commercials with dynamic captions, sound design, and local FFmpeg rendering.",
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.mjs"
+  },
+  "keywords": [
+    "hermes-agent",
+    "video-editor",
+    "ffmpeg",
+    "subtitles",
+    "tiktok",
+    "reels",
+    "shorts"
+  ],
+  "author": "koyawel0694",
+  "license": "MIT"
+}
