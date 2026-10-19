@@ -15,10 +15,10 @@
   - Remove all retakes, stutters, and throat clears immediately.
   - Fast-moving information density suited for science, finance, and educational explainers.
 - Visual Graphics & B-Roll:
-  - Explainer-style pop-up windows, metric callouts, and clean data visualizations.
-  - Strictly avoid static flat PNG cards with linear opacity fades. Use native HyperFrames + GSAP spring animations (`back.out(1.75)`) with macOS dark glassmorphic window chrome (traffic light controls, code/tab header, line-by-line staggered reveals). Reference template: `kit/style-templates/explainer-popup-window/`.
+  - Explainer & Documentary animations: Strictly keep visual canvas clean. No pop-up windows or cards that block papercraft, dioramas, or 3D animations.
+  - Affiliate & Vlogs: Use explainer-style pop-up windows, metric callouts, and clean data visualizations. Avoid static flat PNG cards with linear opacity fades. Use native HyperFrames + GSAP spring animations (`back.out(1.75)`) with macOS dark glassmorphic window chrome (traffic light controls, code/tab header, line-by-line staggered reveals). Reference template: `kit/style-templates/explainer-popup-window/`.
   - Subtle punch-in zoom cuts (5-8% scale) on topic shifts or punchy claims to reset visual attention every 3-5 seconds.
-  - When a pop-up window appears, the camera stage subtly scales down (scale: 0.95) and dims slightly so viewer focus immediately snaps to the card.
+  - When a pop-up window appears on affiliate videos, the camera stage subtly scales down (scale: 0.95) and dims slightly so viewer focus immediately snaps to the card.
 - Color:
   - Crisp, natural grading with punchy contrast and healthy skin tones; avoid heavy stylized color casts that obscure diagram clarity.
 - Sound Design:

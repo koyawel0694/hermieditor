@@ -18,6 +18,7 @@ outbox/*
 !outbox/.gitkeep
 
 # Render project caches
+.*_tmp/
 kit/video-projects/*/renders/
 kit/video-projects/*/assets/
 kit/video-projects/*/.concat*.txt

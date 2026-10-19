@@ -1,7 +1,7 @@
 ---
 name: hermieditor
 description: "Use when editing videos, shorts, or reels with HermiEditor."
-version: 1.0.0
+version: 1.1.0
 author: John & Nessan
 license: MIT
 platforms: [linux, macos]
@@ -15,21 +15,37 @@ metadata:
 
 HermiEditor turns raw footage, talking-head recordings, product clips, and AI-generated video sequences into polished short-form (Reels/TikTok/Shorts) or episodic mini-drama videos with word-level captions, jump cuts, mistake removal, dynamic hooks, B-roll, sidechain-ducked BGM, and sound effects using local HyperFrames rendering and FFmpeg compositing.
 
-Workspace root: `/home/john/Documents/free247editor` (or local repo clone)
+Workspace root: `/home/john/Documents/hermieditor` (repo: `https://github.com/koyawel0694/hermieditor.git`, fallback: `/home/john/Documents/free247editor`)
 
 ## Directory Structure
 
 - `inbox/`: Raw clips and voiceover dropped here (`inbox/<project_slug>/`).
-- `outbox/`: Every draft and final render (`<slug>-v1.mp4`, `<slug>-final.mp4`, `<slug>-under20mb.mp4`, `<slug>-hq-48mb.mp4`).
+- `outbox/`: Final renders (`<slug>-final.mp4`, `.ass`, `.srt`).
 - `my-style.md`: Lasting style preferences (dimensions, pacing, framing, text positioning).
 - `my-rules.md`: Cumulative rules learned from editorial revision notes.
 - `my-sounds/`: Curated 69-sound library (`mini-drama/`, `explainer/`, `us-niche/`), indexed in `catalog.json`.
 - `kit/`: The Herk Edit Kit engine and video projects (`kit/video-projects/<slug>-YYYY-MM-DD/`).
+- `references/`:
+  - `references/motion-cards-and-telegram-delivery.md`: Motion graphics, HyperFrames mini PC rendering, sound design, Telegram limits.
+  - `references/explainer-video-editing.md`: Explainer and documentary assembly, end-image hold rules, clean canvas, and transcription fallbacks.
 - `tools/transcribe.mjs`: Word-level transcription tool (Groq Whisper API or local `faster-whisper`).
 - `references/`:
   - `motion-cards-and-telegram-delivery.md`: Motion graphics, procedural SFX generation, and under-20MB Telegram delivery encoding.
   - `mini-drama-series-editing.md`: Assembly, pacing, simple subtitle styling, sidechain-ducked BGM score integration, and lossless multi-episode compilation.
   - `sound-design-and-sfx-library.md`: Sound effects library organization, FFmpeg stream channel mapping, and volume ducking curves.
+
+## Sound Design & SFX Sourcing Discipline
+
+- **Strict Priority on Curated `my-sounds/` Library**:
+  - Spoken voiceover must ALWAYS be accompanied by real, curated sound files directly from `my-sounds/` (`my-sounds/explainer/`, `my-sounds/mini-drama/`, `my-sounds/us-niche/`), indexed in `catalog.json`.
+  - Strictly avoid synthesizing artificial procedural tones, clicks, or beeps with scipy/numpy when real recordings exist in the curated library. Procedural audio is strictly an emergency fallback.
+- **Affiliate & Explainer SFX Mapping (`my-sounds/explainer/`)**:
+  - Solution / Brand Reveal: `pop-clean.mp3` (gain -3.0 dB) on "Ito ang katapat niyan" / brand reveals.
+  - Metric / Spec Callout: `ding-bell-subtle.mp3` (gain -3.0 dB) on numbers, thickness, or key specs (e.g. "3mm").
+  - Physical Action / Scratch Resistance: `whoosh-transition-fast.mp3` (gain -4.0 dB) on physical friction or demonstrations.
+  - Feature Proof & Payoff: `ding-correct-gameshow.mp3` (gain -5.0 dB) on "100% waterproof" / proof claims.
+  - Bonus / Inclusions: `ding-bell-subtle.mp3` (gain -4.0 dB) on "Libre pa ang pandikit".
+  - Checkout CTA ("Yellow Basket"): `cash-register-cha-ching.mp3` (gain 0.0 dB) timed exactly on "Pindutin mo na ang yellow basket".
 
 ## Production Modes
 
@@ -73,6 +89,9 @@ Workspace root: `/home/john/Documents/free247editor` (or local repo clone)
   - Vibrant gold active highlight (`#FFD700` / `&H0000D7FF`) with a 10% scale pop (`\fscx110\fscy110`) as each word is spoken.
   - Safe Zone: Set `MarginV=480` (Alignment=2) in 1080x1920. Captions sit ~25% above bottom edge, staying clear of TikTok/Reels shopping cart buttons and audio tickers.
   - Semantic Phrase Chunking: Group words by natural Tagalog semantic units (e.g. "SA PETSA DE PELIGRO", "PINDUTIN MO NA ANG YELLOW BASKET").
+- **Transcription Semantic Verification (Colloquial Tagalog/Taglish)**:
+  - Whisper models frequently transcribe rapid colloquial Tagalog phonetically with errors (e.g., "Pindutin" -> "Pintutin", "naka-sale pa" -> "nakasilpa", "petsa" -> "pecha").
+  - Always review transcript words and correct typos before embedding into `.ass` or `.srt` files.
 - **Tactical Affiliate SFX**:
   - Checkout CTA Chime: Timed exactly on the call-to-action (`cash-register-cha-ching.mp3` from `my-sounds/explainer/`).
   - Accent / Ding SFX: Clean bell ding (`ding-bell-subtle.mp3`) on product reveals, key test moments, and payoff moments.
@@ -98,10 +117,10 @@ Workspace root: `/home/john/Documents/free247editor` (or local repo clone)
   ffmpeg -y -ss 0.0 -t <target_seconds> -i composite.mp4 -c copy final_trimmed.mp4
   ```
 - **Special Unicode Characters in Filenames**: Files frequently contain ellipses (`…` U+2026), brackets, or symbols. Always quote variables and use glob matching to prevent silent script failures.
-- **Telegram Upload Limits & Multi-Tier Delivery**:
-  - **Inline Chat Streaming (< 20 MB)**: Encode `<slug>-under20mb.mp4` with bitrate calculated via:
-    `target_video_bitrate = int((18.0 * 1024 * 1024 * 8) / duration_seconds) - 128_000`
-    Pass `-b:v <bitrate> -maxrate <bitrate*1.15> -bufsize <bitrate*2> -c:a aac -b:a 128k -movflags +faststart`.
-  - **Single-File HQ Master (< 50 MB)**: Encode `<slug>-hq-48mb.mp4` targeting ~44-48 MB to stay strictly under Telegram Bot API 50MB ceiling while delivering 1080x1920 4+ Mbps visual fidelity.
-  - **Document File Delivery**: When delivery as uncompressed file is requested, dispatch directly via Telegram Bot API `sendDocument`.
-  - **Standalone Subtitle Deliverables**: Always produce and deliver accompanying `.srt` and `.ass` files in both `inbox/` and `outbox/`.
+- **Single Video Delivery (Final Master Only)**:
+  - Generate ONLY 1 video file by default: `<slug>-final.mp4` (1080x1920, CRF 17-19, 192k AAC stereo, `+faststart`).
+  - Do NOT generate redundant multi-tier files (`<slug>-under20mb.mp4`, `<slug>-hq-48mb.mp4`, or `<slug>-v1.mp4`) unless explicitly requested by the user.
+- **Explicit Stream Mapping**:
+  - When multiplexing base video and master audio, ALWAYS explicitly map video from `0:v` and mixed audio from `1:a` (`-map 0:v -map 1:a`). Omitting `-map` causes FFmpeg to pick `0:a` (the camera/foley track) and completely drop the voiceover track!
+- **Document File Delivery**: When delivery as uncompressed file is requested, dispatch directly via Telegram Bot API `sendDocument`.
+- **Standalone Subtitle Deliverables**: Always produce and deliver accompanying `.srt` and `.ass` files in both `inbox/` and `outbox/`.

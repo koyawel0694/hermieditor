@@ -21,11 +21,12 @@ Persistent editorial rules learned from John's feedback and notes during revisio
   - Aggressive Dialogue Sidechain Ducking: Always wire sensitive sidechain compression (`threshold=0.02:ratio=3.5:attack=50:release=450`) to duck the score an additional 6–10 dB the moment any character speaks, even on quiet whispers. The score only gently breathes during scene transitions and cliffhanger holds.
   - Tactical drama SFX: Sourced from `my-sounds/mini-drama/`. Subtle brass shop door chimes (`shop-door-bell.mp3`), somatic heartbeat flutter pulses (`heartbeat-pulse-loop.mp3` or `heartbeat-stress.mp3`), delicate tactile shimmer on memory flashbacks (`dream-harp-flashback.mp3` / `wind-chimes-memory.mp3`), and emotional tension swells/impacts on cliffhangers (`cinematic-braam.mp3`, `cinematic-sub-boom.mp3`).
   - SFX Leveling: Never mix SFX at full 0 dB. Dialogue is always primary. UI pops/clicks: volume=0.20-0.25; transitions: volume=0.25-0.30; drama braams/booms: volume=0.30-0.35.
-- **Motion Graphics & Pop-up Windows**:
-  - Strictly avoid static flat PNG cards with linear FFmpeg opacity fades. Use native HyperFrames + GSAP spring animations (`back.out(1.75)`) with macOS dark glassmorphic window chrome (traffic light controls, code/tab header, line-by-line staggered reveals). Reference template: `kit/style-templates/explainer-popup-window/`.
-  - In short-form explainers, coordinate camera stage motion: subtly zoom out / pull back (scale: 0.95) and dim the host video when the pop-up window springs in.
+- **Motion Graphics, Visual Cards & Pop-up Windows**:
+  - **Explainer & Documentary Videos (Stop-motion, Papercraft, 3D animations)**: DO NOT add motion graphics cards or pop-up windows. The animation / visual diorama is already high-production value and is the primary visual hook; overlays block the central action and ruin the viewer's focus on the art. Keep explainers clean with pure visuals, Foley audio, and captions only.
+  - **Still Image / Thumbnail Hold**: In explainer videos, any included still image or thumbnail (e.g., .jpg/.png) must be placed at the very END of the video for at least 0.1–0.2 seconds (e.g., 0.20s), never at the beginning.
+  - **Affiliate & Personal Vlog / Talking-Head Videos**: Use motion graphics here! When the video is a talking head or simple product B-roll, use native HyperFrames + GSAP spring animations (`back.out(1.75)`) or compact UI cards to reset visual attention, show price comparisons, and highlight key takeaways.
+  - When graphics are used, keep them in safe zones and avoid covering the speaker's face or hero product.
 - **Delivery Outputs**:
-  - Master Final: Full CRF 19 / 192k AAC 1080x1920.
-  - Telegram HQ Master: `<slug>-hq-48mb.mp4` (~43–48 MB, under 50 MB bot API limit).
-  - Telegram Mobile Inline Preview: `<slug>-under20mb.mp4` (~17–18 MB for auto-streaming).
-  - Standalone Subtitles: Accompanying `.srt` and `.ass` files saved in both inbox and outbox.
+  - **Single Video Delivery**: ONLY generate 1 video: the Master Final (`<slug>-final.mp4`, 1080x1920, CRF 17-19, 192k AAC, +faststart). Do NOT generate multi-tier variants (no `<slug>-under20mb.mp4`, `<slug>-hq-48mb.mp4`, or `<slug>-v1.mp4`) unless explicitly requested by the user.
+  - **Explicit Stream Mapping**: When muxing base video with master audio, ALWAYS explicitly pass `-map 0:v` and `-map 1:a` so the voiceover/mixed master audio is never dropped in favor of raw camera/clip audio.
+  - **Standalone Subtitles**: Accompanying `.srt` and `.ass` files saved in both inbox and outbox.
