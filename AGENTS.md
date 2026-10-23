@@ -1,5 +1,13 @@
 # HermiEditor: Hermes Agent Operational Instructions
 
+
+## PopUpLedger Adaptive Editing Profile v3.0 — Creative Direction Gate
+
+At the start of a new project, if the user has not already given a clear visual direction, ask exactly once using `templates/motion-graphics-direction-menu.md`: A) Auto-director, B) user selects from styles, C) custom user direction, D) propose treatment and wait for approval. Remember the choice in the project brief. Don't repeatedly request approval for routine choices when Auto-director is selected.
+
+Read `my-style.md`, `my-rules.md`, and `references/popupledger-motion-graphics-style-library.md`. For long-form explainers, use `references/popupledger-long-form-explainer-motion-design.md` and create a visual beat map before final assembly. Choose one primary style family plus up to two supporting families by default; use diagram animation, pop-ups, UI motion, collage, parallax, tracking, charts, timelines and other techniques based on the content, not as a checklist. Use accurate designed graphics and sourceable footage as appropriate; AI video remains selective. Match aspect ratio to the requested format, use sound effects only when motivated, and inspect the actual rendered master.
+
+
 HermiEditor is an adaptive video editing suite for Hermes Agent, covering 16:9 long-form YouTube explainers/documentaries, vlogs, 9:16 Shorts/Reels, product/affiliate videos, and episodic mini-dramas from footage, narration, graphics, and selected AI-generated assets.
 
 ## Workspace Layout
@@ -24,15 +32,15 @@ When the user asks you to edit a video:
    - Check duration of audio and clips with `ffprobe`.
    - Check first 1.5s for AI video reference image flash artifacts (`ffmpeg -ss 0.0 -t 1.5 -i clip.mp4 -filter_complex "select='gt(scene,0.25)',metadata=print" -f null -`).
 4. **Plan visuals and captions**:
-   - **Explainer Clean Canvas Rule**: In explainer videos (animation, stop-motion, papercraft, 3D dioramas), **remove floating cards or pop-up boxes over the footage**. Keep the presentation focused: clean visual footage, active tracking subtitles in safe zone, smooth motivated transitions, layered SFX/foley, and video effects (punch-in zooms, speed ramps, reframes). Reserve floating motion cards strictly for vlogs, talking heads, and affiliate product showcases.
-   - For long-form explainers, read the adaptive explainer motion-design reference and create a script-to-visual beat map before final assembly. Use diagrams, progressive graphic builds, truthful charts, comparisons, timelines, annotated real screenshots/source inserts, and relevant B-roll; AI-generated footage is selective, not the default for every sentence.
-   - Captions depend on format: long-form uses an optional subtitle sidecar and no karaoke by default; Shorts/Reels can use dynamic phrase/word emphasis; mini-drama uses clean dialogue subtitles. Verify transcription, especially names, figures, and Tagalog/Taglish.
-   - Use format-specific safe zones. Do not reuse a 1080x1920 portrait `MarginV` value in landscape projects.
+    - Ask the A/B/C/D creative-direction question once if the project direction is not already explicit. For long-form explainers, create a visual beat map and asset/source manifest before final assembly.
+    - Match visuals to meaning: designed diagrams for mechanisms, factual charts for verified numbers, genuine screenshots for real interfaces, sourced footage for factual context, and selective AI footage for illustrative/cinematic purpose.
+    - Captions depend on format: long-form subtitles/sidecars rather than forced karaoke; dynamic phrase emphasis for Shorts/Reels where useful; accurate dialogue subtitles for mini-drama. Verify names, numbers and language.
+    - Use format-specific safe zones and follow the requested aspect ratio.
 5. **Master Audio**:
-   - Set dialogue clarity by listening and checking actual levels; use gentle cleanup/EQ/compression only where appropriate, not a fixed chain blindly on every voice.
-   - Set music under speech with listening, metering, and automation/sidechain as appropriate. Avoid a universal hard-coded BGM volume for every source file.
-   - Use curated SFX from `my-sounds/` only for meaningful graphic/action/transition cues. Voiceover alone does not require SFX; clean dialogue, ambience, or silence can be the best design.
+    - Prioritize dialogue clarity; apply cleanup/EQ/compression only where appropriate and listen to the actual result.
+    - Balance music with listening, metering and automation/sidechain as appropriate; avoid one fixed BGM level for every file.
+    - Use sound effects for meaningful visual/action/transition cues only. Voiceover alone does not require SFX; ambience or silence can be best.
 6. **Composite & Export Deliverables**:
-   - Use the requested/project aspect ratio: standard 16:9 long-form is 1920x1080; 9:16 vertical is 1080x1920; obey any other explicit request and preserve project FPS where practical.
-   - Deliver one requested master (`<slug>-final.mp4`) by default plus appropriate/generated subtitle sidecars. Do not generate `under20mb`/`hq-48mb` variants or alternate ratios unless requested.
-   - Keep the final master in `outbox/`; verify dimensions, duration, A/V sync, audio stream mapping, captions, graphics, and the actual final render before delivery.
+    - Match requested/project ratio: standard 16:9 long-form is typically 1920x1080; 9:16 vertical is typically 1080x1920; preserve source/project FPS where practical.
+    - Deliver one requested master plus relevant subtitle sidecars by default. Avoid extra compression tiers or alternate ratios unless requested.
+    - Inspect the actual final render for dimensions, duration, A/V sync, audio mapping, captions, motion graphics, artifacts and end frame.

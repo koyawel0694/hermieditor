@@ -1,6 +1,6 @@
 ---
 name: hermieditor
-description: "Use when editing long-form YouTube videos, explainers, vlogs, shorts, reels, product videos, or mini-dramas with HermiEditor."
+description: "Use for adaptive long-form YouTube, explainers, vlogs, Shorts/Reels, product videos, and mini-dramas with motion design."
 version: 1.3.0
 author: John & Nessan
 license: MIT
@@ -17,13 +17,19 @@ HermiEditor turns raw footage, talking-head recordings, product clips, and AI-ge
 
 Workspace root: `/home/john/Documents/hermieditor` (repo: `https://github.com/koyawel0694/hermieditor.git`, fallback: `/home/john/Documents/free247editor`)
 
-## Universal Editing Profile — Adaptive Editing Studio
+## Adaptive Editing Profile — PopUpLedger Studio v3.0
 
-Before every project, read the repository-root `my-style.md` and `my-rules.md`. For long-form explainers, also read `skills/hermieditor/references/adaptive-long-form-explainer-motion-design.md` and create a script-to-visual beat map from the available template before final assembly. This is one adaptive profile covering 16:9 long-form YouTube, explainer/documentary, vlog/creator content, 9:16 Shorts/Reels, product/affiliate videos, and mini-drama/short film.
+Before every project, read repository-root `my-style.md` and `my-rules.md`. Read `references/popupledger-motion-graphics-style-library.md` when planning motion design. For long-form explainers, read `references/popupledger-long-form-explainer-motion-design.md` and create a script-to-visual beat map before final assembly. This is one adaptive profile for 16:9 long-form YouTube, explainers/documentaries, vlogs, 9:16 Shorts/Reels, product/affiliate videos, and mini-dramas.
 
-For this user, professional motion design is a default for informational/explainer content: purpose-built diagrams, kinetic key phrases, truthful charts, comparisons, timelines, annotated screenshots/source inserts, lower thirds, relevant B-roll, and selective VFX/SFX should be chosen proactively when they improve understanding or retention. Do not build long-form explainers from AI-generated video clips alone. Use AI footage selectively for illustration/atmosphere; do not use it for critical data, readable text, UI, or evidence.
+### Creative-direction gate
+If the user has not already supplied a clear visual direction, ask once: (A) Auto-director chooses based on script/assets/references; (B) user chooses from the style menu; (C) user gives custom direction; (D) propose a treatment and wait for approval. Do not re-ask within that project. If A is chosen, make normal scene-level choices autonomously. If D is chosen, wait for approval before full production.
 
-Profile precedence: direct task instructions first; then the matching preset in `my-style.md` and persistent rules in `my-rules.md`; then generic production-mode defaults. A generic mode must not silently disable a preference expressly set in the user's profile. Keep motion intentional, factually grounded, and tool-supported; do not apply an effect or sound merely to fill the frame.
+### Motion design beyond kinetic typography
+Use the style library as a selectable toolkit: minimalist callouts, diagrams/infographics, data visualization, UI animation, contextual pop-ups, mixed-media collage/cut-outs, 2.5D parallax, supported 3D/isometric visuals, motion tracking, maps/timelines, split screens, illustrations/metaphors, masks/shape transitions, documentary/source graphics, line-art, expressive creator graphics, cinematic graphics, justified HUD overlays, and freeze-frame/subject separation. Choose one primary visual family plus up to two supporting families by default; do not apply every style in every scene.
+
+For explainers, plan each narration beat's visual purpose, style family, exact copy/data, asset/source, animation entry/build/hold/exit, sound cue or `none`, and QC risks. Prefer designed graphics for processes/relationships, verified data visuals for numbers, genuine screenshots for actual interfaces, sourceable footage for factual context, and selective AI video for illustrative/cinematic value. AI-generated footage must not replace accurate diagrams, critical text, verified UI or evidence. Inspect available rendering tools before planning effects; if unsupported, use a faithful supported fallback and disclose the limit.
+
+Profile precedence: direct user instructions → selected creative direction and approved treatment → matching format preset in `my-style.md` → persistent rules in `my-rules.md` → generic production defaults. Do not let older generic defaults silently disable a clearly stated user preference. Keep motion purposeful, legible, accurate and tool-supported.
 
 ## Directory Structure
 
@@ -44,6 +50,8 @@ Profile precedence: direct task instructions first; then the matching preset in 
   - `templates/adaptive-long-form-visual-beat-map.csv`: Script-to-visual beat map planning sheet.
   - `templates/adaptive-explainer-project-brief.md`: Explainer brief and quality gate checklist.
 - `tools/transcribe.mjs`: Word-level transcription tool (Groq Whisper API or local `faster-whisper`).
+
+- **Visuals & Overlays Discipline**: Follow the user's adaptive profile and selected creative direction. For informational/explainer content, proactively use purposeful diagrams, animated callouts, relevant pop-ups, kinetic key phrases, accurate charts, comparisons, timelines, annotated real screenshots, and B-roll where they clarify meaning. Keep visual hierarchy readable and let clean footage breathe whenever graphics would distract. Do not add decorative HUDs, fake data, or effects simply to fill the frame.
 
 ## Sound Design & SFX Sourcing Discipline
 
