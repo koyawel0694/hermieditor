@@ -1,144 +1,115 @@
-# Adaptive Editing Profile — Visual Style Guide
+# Adaptive Editing Profile — Visual Style Guide (v2.0)
 
-**Profile version:** 1.0  
-**Purpose:** One reusable editing identity for long-form YouTube, vlogs, YouTube Shorts, Reels, and mini-drama series.  
-**Core direction:** Premium, story-first editing with purposeful motion graphics, confident pacing, polished sound design, motivated transitions, and a clear visual hierarchy. The result must not feel like a static slideshow or plain sequence of cuts.
+**Profile version:** 2.0  
+**Applies to:** 16:9 long-form YouTube, explainers/documentaries, vlogs, creator videos, 9:16 Shorts/Reels, product/affiliate videos, and mini-drama/short film.  
+**Core signature:** Premium, story-first editing with purposeful motion design, strong visual explanations, clear hierarchy, motivated transitions, layered sound design, and render verification. One profile adapts to the project; it does not force one identical look onto every genre.
 
-## 1. Master Principle
+## 1. Non-negotiable master principle
 
-Use one consistent editorial quality bar, not one identical treatment for every format. Adapt graphic density, rhythm, captions, color, transitions, and sound to the content. Every effect must clarify information, guide attention, strengthen emotion, sell an authentic product benefit, or improve rhythm. Do not add effects merely to prove that effects were used.
+**Do not default to a wall of AI-generated video clips.** Footage is only one visual tool. For informational/explainer content, treat editor-built motion graphics, diagrams, kinetic typography, charts, comparisons, timelines, annotated screenshots, and sourced B-roll as first-class storytelling assets. Use AI-generated footage when it adds atmosphere, a human-scale illustration, an otherwise unavailable establishing shot, or cinematic texture—not as a substitute for a diagram, real data, a UI demonstration, or a precise explanation.
 
-Priority order:
-1. The user's direct instructions for this project.
-2. The correct format/genre preset in this file.
-3. The available footage, script, recorded audio, brand assets, and factual source material.
-4. The default adaptive visual identity below.
+For every section, ask: **What does the viewer need to understand, feel, compare, remember, or verify at this exact line?** Choose the clearest visual. Use the user's direct brief first, then the matching preset below, then the actual assets and verified source material. Do not invent content or claim a tool/effect worked unless it was rendered and checked.
 
-Before editing, inspect all project assets, aspect ratios, durations, audio tracks, available fonts, motion-graphics templates, and `my-sounds/catalog.json`. If the brief explicitly names a format, obey it. Otherwise infer from the request and media; state the inference in the edit plan when it could materially affect the result.
+## 2. Before editing: inspect and plan
 
-## 2. Visual Identity
+1. Inspect the full project folder: scripts, narration/audio, source video, reference stills, logos, fonts, existing edits, and the actual files in `my-sounds/catalog.json`.
+2. Detect the format, aspect ratio, frame rate, total duration, source audio/video streams, and available graphics engine/templates. Explicit user instructions override inference.
+3. For any explainer or long-form informational video, transcribe/inspect the final narration and create a visual beat map using `templates/adaptive-long-form-visual-beat-map.csv` or an equivalent Markdown/JSON plan **before the final edit**. Every major script beat must have a visual purpose, chosen visual type, on-screen text/assets, motion behavior, and audio cue (including “none” where silence is best).
+4. If exact narration timecodes are available, anchor each beat to them. If not, map in script order first, then align to the actual voice track. Do not guess precise timecodes and present them as measured.
+5. If the user supplies a logo, channel graphic, or reference video, inspect and reuse the real style. Never claim to have studied a channel aesthetic without inspecting actual assets/video.
+
+## 3. Visual identity and system
 
 ### Brand handling
-- If a supplied logo, channel intro, thumbnail, brand guide, or recurring graphic exists, sample and reuse its real visual language.
-- Do not claim to have inspected the channel's visual branding unless actual channel assets or videos are available in the project.
-- If no brand assets exist, use this fallback palette for informational graphics: **graphite `#111318`, off-white `#F5F7FA`, signal lime `#C5FF3D`, and clear cyan `#58D5FF`**. Use lime for the primary highlight and cyan sparingly for secondary information.
-- The fallback palette is not mandatory for cinematic fiction or naturalistic vlogs. For those, preserve the scene's emotional color grade and use the brand accent only on chapter cards, opener/ender graphics, or other appropriate overlays.
-- Use one clean sans-serif family for most graphics (e.g. Inter, Manrope, or a locally installed equivalent); verify the font exists before rendering. Use a restrained display face for titles only when available.
-- Establish a repeatable system for title cards, lower thirds, section labels, statistic callouts, and end cards. Keep corner radius, stroke weight, spacing, easing, and accent usage consistent.
+- Use actual supplied channel assets if available. If not, fallback informational palette: **graphite `#111318`, off-white `#F5F7FA`, signal lime `#C5FF3D`, and cyan `#58D5FF`**. Lime is the primary highlight; cyan is a secondary information cue. Use colors meaningfully, not as decoration.
+- Do not force the fallback palette onto emotional fiction or naturalistic travel/vlog footage. Use it on chapter labels, title cards, or informational overlays only when it fits.
+- Prefer one clean sans-serif family (Inter, Manrope, or an installed equivalent) with a disciplined weight hierarchy. Verify font availability. Use no more than two families and keep typography consistent across graphic components.
+- Define reusable components: title/section label, lower third, key phrase, stat callout, diagram node, data chart, source tag, UI/screenshot frame, comparison panel, and end card. Keep stroke widths, corner radii, shadows, spacing, easing, and colors consistent.
+- Aim for designed, editorial compositions—not a random pile of translucent cards. Glassmorphism is an optional treatment, not the default for every visual. Avoid generic dashboards/HUDs that do not convey information.
 
-### Design quality
-- Prefer layered composition, clear hierarchy, negative space, and purposeful contrast over generic templates.
-- Text and cards should enter with motion (spring, masked reveal, tracking/scale, or directional slide) rather than a flat opacity fade alone when the chosen renderer supports it.
-- Use animation curves intentionally: quick ease-out for information, spring/back easing for lively emphasis, smooth ease-in-out for cinematic moves.
-- Keep all critical text readable at phone size. No cluttered stacks of labels, tiny paragraphs, decorative HUDs with no meaning, or graphics covering faces, hands, product details, or story-critical action.
-- Build graphics from actual story/script/data. Never fabricate figures, labels, quotes, map routes, product features, evidence, or interface screenshots.
+### Hierarchy and readability
+- One primary message per designed scene. Supporting labels should not compete with the headline or narrated idea.
+- Use short phrases for emphasis, not a complete transcription of the voiceover on every frame. Show exact wording when it is a quote, technical term, UI label, or essential claim.
+- Keep important text readable on a small phone preview even in a 16:9 video. Avoid microtype, overly long lists, overlapping elements, and simultaneous movement in every layer.
+- Preserve clear negative space around key text, diagrams, faces, hands, products, subtitles, and important footage.
 
-## 3. Automatic Format Presets
+## 4. Format presets — one profile, adaptive treatment
 
-Choose the best matching preset before timeline assembly. When a project combines styles, use a primary preset and borrow secondary elements only where appropriate.
+### A. Long-form YouTube / Explainer / Documentary (default 16:9)
+- **Canvas:** 1920×1080 for a standard 16:9 master. Preserve genuine 4K when the source/workflow supports it; do not upscale merely to claim 4K. Match source/project frame rate where practical, commonly 24/25/30 fps.
+- **Editorial goal:** Every major spoken idea should become visible, not just audible. Mix designed motion graphics, diagrams, typography, charts, carefully chosen real/sourced B-roll, screenshots/UI, maps/timelines, and occasional real or AI-generated footage. The edit should not be 100% AI-generated video just because AI clips are easy to generate.
+- **Explainer visual target:** At least half of the *major explanatory beats* should use purpose-built or sourced explanatory visuals (e.g., diagrams, animated text, truthful charts, comparisons, labeled screenshots, maps/timelines, or concrete B-roll) when the topic supports them. This is a planning target, not a rigid screen-time quota; use story and accuracy to decide.
+- **Narration rhythm:** In dense voiceover passages, aim for a meaningful visual shift about every 5–10 seconds (graphic build, meaningful crop/reframe, new B-roll, screenshot annotation, diagram phase, or section change). A complex diagram may need 5–12 seconds to develop and remain readable. Hold important facts long enough to read; let emotional or cinematic footage breathe. Never force a cut on a stopwatch.
+- **Hero moments:** Give each chapter a few custom hero visuals—an animated mechanism, comparison, timeline, important number, map, or diagram—that do real explanatory work. Use smaller callouts between them to maintain continuity, but do not turn every sentence into a pop-up.
+- **Visual refreshes:** Alternate wide/context footage, designed graphics, detail inserts, charts, annotated screens, and clean footage. Avoid several visually identical scenes in sequence when the information changes.
+- **Transitions:** Mostly clean cuts, J/L cuts, match cuts, graphic match transitions, motivated push/slide/mask reveals, and occasional short whip/blur transitions. Reserve elaborate transitions for a chapter break, strong visual connection, or genuine energy shift. Never apply the same transition between all shots.
+- **Captions:** Do not force karaoke captions onto long-form by default. Use a separate `.srt` when available; burn subtitles only when requested or appropriate. Key-phrase typography is a graphic layer and should not compete with full subtitles.
 
-### A. Long-form YouTube / Documentary / Explainer
-- **Default canvas:** 16:9, 1920×1080; preserve 4K only when source footage and render resources justify it. Match source frame rate where practical (commonly 24, 25, or 30 fps); do not silently convert frame rates unnecessarily.
-- **Narrative:** Cold open or compelling opening beat, clear premise, logical chapters, visual proof, varied pacing, and a satisfying close. Use chapter/section bumpers only where they help orientation.
-- **Motion-graphics expectation:** This mode must not be plain talking-head cuts. Add relevant designed visual beats throughout: animated lower thirds, kinetic key phrases, key-point cards, number/stat callouts, diagrams, chart builds, timelines, maps, comparisons, source/reference cards, split screens, picture-in-picture, or labeled B-roll. Use only the elements supported by the actual content.
-- **Visual rhythm:** Aim for a meaningful visual refresh about every 6–12 seconds during narration-heavy sections (e.g. B-roll, reframing, a graphic, a crop change, a visual example). Allow longer holds for complex information, important reactions, demonstrations, and cinematic footage. Do not force a cut at a fixed interval.
-- **Graphics density:** Create several purposeful hero graphics per chapter and smaller supporting callouts at natural information beats. Key facts, turning points, comparisons, and unfamiliar terms deserve a designed treatment; not every sentence needs a popup.
-- **Transitions:** Hard cuts, J-cuts/L-cuts, match cuts, motivated push/slide transitions, and occasional short whip or mask transitions. Save elaborate transitions for chapter changes or genuine visual links. Avoid default crossfades between every clip.
-- **Camera treatment:** Subtle reframing/punch-ins (roughly 3–6%) on topic changes or emphasis; split screen and picture-in-picture when they improve comparison or context. Use speed ramps only for footage with a clear motion/action beat.
-- **Sound:** Build ambience, music, action Foley, and accent SFX as separate purposeful layers. Give major claims, chapter reveals, visual proofs, and section turns distinct but not repetitive sound cues.
+### B. Vlog / Creator-led Video
+- Preserve personality, natural delivery, real ambience, reactions, and useful pauses.
+- Use animated lower thirds, location/time stamps, maps/route inserts when supported by real data, chapter labels, contextual lists, receipt/message/screen inserts, occasional kinetic punchlines, and B-roll that proves or illustrates what is being said.
+- Use clean cuts, J/L cuts, match cuts, and motivated whip/movement cuts. Keep graphics secondary to the person and moment.
+- Use ambience and action Foley sparingly but specifically. Do not turn organic vlog footage into a constant soundboard.
 
-### B. Vlogs / Creator-led Videos / Talking Head
-- **Canvas:** Match requested distribution; default to 16:9 landscape for a normal YouTube vlog and 9:16 only when requested or when the footage is clearly made for vertical platforms.
-- **Rhythm:** Keep personality and natural delivery. Remove distracting dead air and failed takes but retain meaningful pauses, reactions, laughter, and ambience.
-- **Motion graphics:** Animated lower thirds, location/time stamps, map or route inserts when supported by assets, chapter labels, quick lists, message/receipt inserts, contextual labels, playful but restrained stickers, and short kinetic punchlines. Use the brand system consistently.
-- **B-roll:** Use cutaways, detail shots, establishing shots, contextual inserts, and occasional split screen to hide edits and make the story easier to follow.
-- **Transitions:** Mostly clean cuts, J/L cuts, match cuts, and motivated whip or movement cuts. Use flash, spin, or glitch effects sparingly and only where the footage/style supports them.
-- **Sound:** Retain useful real location ambience. Add light Foley for physical actions and short whooshes/pops for a few graphic reveals; keep vlog audio organic, not like a constant soundboard.
+### C. Shorts / Reels / Other Vertical Short-form
+- **Canvas:** 1080×1920 9:16 unless another ratio is requested. Reframe each shot intentionally; never blindly center-crop important subjects.
+- Start with the strongest visual claim, question, result, conflict, or curiosity gap. Avoid long logo intros.
+- Use higher information density than long-form: phrase-based dynamic captions, kinetic key terms, fast-but-readable diagrams, proof callouts, comparisons, inserts, and strong visual payoffs.
+- Punch-ins (roughly 5–8%), speed ramps, masks, whip transitions, freezes, and impact moments are options, not mandatory decorations. Protect comprehension.
+- Keep critical text out of platform UI areas and preview the final composition as a phone-sized frame.
 
-### C. YouTube Shorts / Instagram Reels / Other Vertical Short-form
-- **Default canvas:** 9:16, 1080×1920. Reframe every shot intentionally instead of blindly center-cropping. For another requested aspect ratio, obey that request.
-- **Opening:** Start with the strongest visual, question, conflict, result, or curiosity gap. Avoid long logo intros. Make the point immediately clear.
-- **Rhythm:** Higher information density than long-form; remove genuinely empty pauses, use purposeful jump cuts, punch-ins (roughly 5–8%), insert shots, and strong visual changes at narrative beats. Preserve enough breathing room for comprehension.
-- **Captions:** Use bold, high-contrast phrase-based captions; word-by-word active highlighting is allowed and preferred for fast explainers, commentary, affiliate demos, and energetic short-form. Use the accent color to emphasize only selected words/numbers, not every word. Keep captions away from faces and platform interface zones.
-- **Motion graphics:** Strong kinetic hooks, animated labels, proof callouts, comparison cards, progress markers, chart/stat animations, and clean CTA end beats when relevant. Graphics should help the viewer understand the hook, proof, or payoff.
-- **Transitions and VFX:** Quick whip/mask transitions, zoom matches, match cuts, speed ramps, freeze-frame callouts, and short impact frames as motivated. Avoid applying all of them to every cut.
-- **Sound:** Tightly synchronized pops, whooshes, ticks, impacts, and accents. Do not place an SFX on every word or every edit.
-- **Safe areas:** Keep critical text away from the top and bottom interface zones and validate legibility on a phone-sized preview.
+### D. Product / Affiliate Video
+- Make the real product visible and central. Use accurate feature labels, dimensions, price comparisons only when supplied/verified, test/result callouts only when the footage proves them, before/after comparisons only when genuine, and clean CTA emphasis.
+- Sync Foley to physical actions. Use the actual product shot—not a generic AI substitute—when demonstrating texture, size, packaging, controls, or performance.
+- Never invent specifications, discounts, stock availability, product certifications, reviews, or performance claims.
 
-### D. Mini-drama / Short film / Episodic Fiction
-- **Default canvas:** Preserve the requested/shot format. Use 9:16 for vertical series and 16:9 for landscape drama.
-- **Priority:** Acting, eyelines, dialogue intelligibility, continuity, emotional beats, character identity, and coherent screen direction come before graphic density.
-- **Captions:** Clean, static or gently revealed dialogue subtitles; never use bouncing karaoke words for serious/emotional scenes unless explicitly requested. Use a clean sans-serif, white text, dark outline/shadow, and format-specific safe zones. Match spoken language exactly after transcript review.
-- **Motion graphics:** Use cinematic title/episode cards, subtle scene labels, diegetic phone messages/screens when story-relevant, flashback/time markers, split-second freeze-frame emphasis, or graphic match transitions when they serve the plot. No random floating explainer cards over emotional dialogue.
-- **Transitions:** Choose from motivated cuts, match cuts, short dissolves, sound bridges, whip cuts for action, flash-frame/blur for subjective memory, and deliberate fades. A 0.5s crossfade is an option, not a mandatory transition between every shot. Never crossfade over overlapping dialogue without checking timing.
-- **VFX:** Preserve character and location continuity. Use restrained grain, halation, lens bloom, vignette, speed ramp, handheld shake, or flash effects only when they suit the scene and available processing supports them. Never add a visual effect that changes story facts or character appearance.
-- **Sound:** Use believable room tone and location ambience; add synchronized tactile Foley (steps, doors, fabric, props), perspective-based movement, emotional score, tension risers, and selective impacts. Silence can be a powerful beat. Cliffhangers may use a deliberate hold, audio drop, or fade only when the scene earns it.
+### E. Mini-drama / Short film / Episodic Fiction
+- Protect acting, dialogue, facial expressions, eyelines, continuity, emotional timing, screen direction, and character identity. Motion design remains available, but must belong to the story.
+- Use elegant dialogue subtitles, cinematic title/episode cards, diegetic messages/screens, time/place markers, visual motif transitions, and expressive ambience/Foley when story-relevant. Do not place generic explainer cards or HUDs over serious acting.
+- Preserve reaction beats. Crossfades are optional and must never cause unintended dialogue overlap. Silence can be more powerful than a sound effect.
 
-### E. Product / Affiliate / Demonstration Video
-- **Narrative:** Problem/need → product reveal → feature proof → real demonstration → value summary → CTA, adjusted to the available footage and truthful claims.
-- **Motion graphics:** Animated feature labels, dimensions/prices only when supplied, feature checklists, side-by-side comparisons, product detail magnification, step markers, and clean CTA. Never cover the product or invent a specification.
-- **Sound:** Sync Foley to real touches, opening, placement, use, and packaging. Use price/reveal accents tastefully; do not add a checkout sound unless there is an actual CTA context.
-- **Product integrity:** Do not alter the shape, logo, color, quantity, or demonstrated performance of the product through misleading VFX.
+## 5. Long-form explainer visual language
 
-## 4. Motion Graphics Toolkit
+Read `references/adaptive-long-form-explainer-motion-design.md` for the complete visual grammar, motion rules, sample beat maps, and sound design. The following decisions are mandatory:
 
-Use whichever options the installed HermiEditor/HyperFrames/GSAP/FFmpeg setup genuinely supports. Prefer the following building blocks:
-- Kinetic headline or key-phrase reveal; animated word/line mask; letter-spacing or scale emphasis.
-- Animated lower-third with name, role, location, or chapter (only from known information).
-- Stat/number count-up, bar build, timeline, comparison table, label pointer, or diagram reveal from supplied facts.
-- Floating media window, picture-in-picture, screen mockup, source card, map, annotation, or crop-in detail when assets/data support it.
-- Freeze-frame with tracked/anchored callout only if reliable tracking is supported; otherwise use a fixed or manually positioned pointer.
-- Chapter bumper, series title, end card, and subtle brand sting.
-- For each graphic, define entry, hold, and exit timing; make it readable long enough to process; remove it before it conflicts with the next story beat.
+- **Abstract idea or mechanism:** explain it with an animated diagram, flow, system map, hierarchy, timeline, feedback loop, or visual metaphor—not generic AI footage.
+- **Specific place, person, physical activity, or real-world event:** prefer verified/sourceable footage or stills when factual accuracy matters; AI footage can be illustrative but must not be presented as real evidence.
+- **A number, trend, or comparison:** use a truthful chart/counter/comparison built from verified values. Never use decorative or fabricated numbers.
+- **A named term or key phrase:** introduce it through kinetic typography, then connect it to a concrete icon, object, example, or diagram.
+- **A product/software/interface:** use genuine footage or screenshot and build animated pointers, highlights, masks, zooms, or UI callouts around it. Do not ask a video model to render legible UI text.
+- **A claim that needs proof or context:** show the relevant source excerpt, document, chart, citation tag, or actual example. Do not add fake reference cards.
+- **An emotional or human consequence:** real B-roll, a carefully labeled illustrative image/video, or a human-centered visual may be better than abstract infographics.
 
-If an advanced animation cannot be rendered reliably, use the best clean supported alternative (e.g. animated SVG/HTML overlay or simpler FFmpeg compositing). Do not silently output a still card when the brief calls for motion without first attempting a feasible animation.
+## 6. Motion design and effects
 
-## 5. Transitions and Video FX
+- Use varied animation principles: anticipation, eased entry, stagger, reveal/mask, overshoot-and-settle, draw-on lines, progressive diagram assembly, camera parallax, and controlled exit. Choose a small set of behaviors per sequence to establish a visual rhythm.
+- Starting ranges: text/callout entrance 0.25–0.55s; line/node build 0.3–0.8s each; hero-stat or main chart reveal 0.6–1.2s; quick exit 0.2–0.4s. These are starting points, not hard limits—match the narration, complexity, and desired emotional weight.
+- Use a quick settle after a spring/overshoot; avoid perpetual floating, idle wiggles, and constant parallax behind text.
+- Camera punch-ins should usually be subtle for long-form (about 3–6%) and used only when there is a narrative reason. Use split screen or picture-in-picture when it clarifies a comparison or relation.
+- Glitch, RGB split, heavy shake, lens flare, excessive motion blur, giant flashes, and 3D spins are rare accents. Do not stack them by default.
+- No motion should cause the viewer to lose the information being explained. Allow a hold after major text/diagram reveals and delay the next competing event until the key idea has landed.
 
-- **Default edit is a clean cut.** Pick a transition because the action, camera movement, sound, time, mood, or information connects across shots.
-- Short energetic transition: typically 0.12–0.35s. Cinematic transition: typically 0.25–0.65s. Longer fades are reserved for opening/ending or meaningful time/scene changes. These are starting ranges, not rigid requirements.
-- Prioritize J-cuts, L-cuts, match cuts, action cuts, motivated whip pans, masking wipes, speed ramps, foreground wipes, and intentional audio bridges.
-- Use motion blur only when movement warrants it. Use camera shake only for a real impact/action beat. Use glitch/RGB split only for digital disturbance, deliberate stylization, or a story cue—not as a default transition.
-- Stabilize shaky footage only as needed and watch for warping/cropping artifacts. Match white balance, exposure, and contrast across adjacent shots before adding a stylized grade.
-- Inspect every effect for bad masks, exposed edges, flashes, duplicate frames, abrupt scale jumps, or mismatched motion.
+## 7. Sound and mix
 
-## 6. Sound Design and Mix
+- Build a clear hierarchy: dialogue/important production sound first; action Foley and meaningful ambience next; music below speech; accent SFX used selectively.
+- Inspect `my-sounds/catalog.json` and select files that actually exist. Never invent a sound filename. Use one of the following only when context calls for it: soft UI tick/click for a labelled interaction, a short whoosh for directional movement, a subtle tonal ping for a key term, a restrained impact for a major reveal, or an environmental bed for place/continuity.
+- Do not add SFX to every word, caption, cut, or card. A clean voice-only moment, natural ambience, or silence may be the correct design choice.
+- Time an SFX to the visual landing/impact, not arbitrarily to the start of a scene. Avoid repetitive identical sounds. Fade tails naturally and check for clipping.
+- Set music ducking from the actual voice and music levels, not a fixed volume preset applied blindly. Keep speech intelligible without harsh over-EQ or over-compression.
+- As a practical online-master starting point, target roughly -14 to -16 LUFS integrated and true peak no higher than -1 dBTP, while respecting platform, source dynamics, and project requirements. Measure the final mix; do not assume normalization alone makes it balanced.
 
-Create a deliberate audio hierarchy: **dialogue/important production audio → story/action Foley → key SFX → music/ambience**. For dialogue-led content, speech must remain clearly intelligible.
-- First inspect audio files and `my-sounds/catalog.json`; use actual available curated sounds. Do not invent a filename or assume a sound exists without checking.
-- Use real ambience as the bed where appropriate. Add small Foley details for meaningful physical actions and room/location continuity.
-- Use short UI pops/clicks for graphics, whooshes for directional movement, soft ticks for data reveals, and low impacts/risers for genuine major beats. Vary or omit cues when repetition becomes noticeable.
-- Use sidechain compression or volume automation to duck music under speech, usually by about 4–8 dB as a starting point; make deeper dips for whispers, dense facts, or emotional dialogue. Restore music naturally between speech phrases.
-- Do not apply a fixed `volume=0.07` blindly to every BGM file. Levels must be set against the actual source audio and the final mix.
-- Clean dialogue with gentle high-pass filtering near 70–100 Hz when appropriate, corrective EQ, light compression, and de-essing if needed. Do not over-process or boost a frequency without listening/checking for harshness.
-- Practical final target for a typical online master: about **-14 to -16 LUFS integrated** and **true peak no higher than -1 dBTP**, adjusted for the content and platform. Check meters; do not rely on a guessed filter value. Do not normalize individual tracks to the final-master target before mixing.
-- Avoid clipped peaks, phasey dialogue, abrupt music cuts, SFX louder than the story moment, and silent gaps caused by incorrect stream mapping. Ensure the intended voice/music mix is actually mapped into the final render.
+## 8. Technical and asset integrity
 
-## 7. Captions, Text, and Safe Zones
+- Use installed HyperFrames/GSAP templates when available for dynamic HTML/SVG motion design. If unavailable, use the strongest supported fallback (e.g., native SVG/HTML/CSS assets, keyframed overlays, or FFmpeg compositing). Inspect the actual project and tools first.
+- Do not create a fake “native” effect by merely describing it in notes. If the current renderer cannot animate an element, either create a supported asset/sequence or disclose the limitation and offer the closest working alternative.
+- Use actual source data for charts, quotes, labels, maps, and UI. Attribute source-derived claims in a legible source note when appropriate. Preserve copyright/licensing constraints for footage, music, and images.
+- Inspect and remove unintended AI character-reference flashes, duplicated/warped frames, visual hallucinations, flickering text, malformed hands/faces, logo/text mutations, unintended black frames, and mismatched audio. Do not remove an intentional story beat without checking context.
 
-- Review ASR output against actual dialogue, especially names, Filipino/Tagalog/Taglish, slang, products, and numbers. Correct transcription errors; do not paraphrase quoted dialogue unless requested.
-- Long-form: phrase-level captions are optional; supply `.srt` when available. Burn subtitles only when asked or when the preset/source calls for it.
-- Shorts/Reels: dynamic captions are expected for spoken explainers/commentary/affiliate content unless the user requests otherwise. Emphasize only key terms and retain natural line breaks.
-- Vlogs: use full captions if requested; otherwise prefer selective captions for key jokes, names, locations, or important points when useful.
-- Mini-drama: use dialogue subtitles, not karaoke animation by default.
-- For 16:9, keep titles and lower-thirds comfortably inside frame margins and away from faces. For 9:16, allow wider UI-safe margins at top and bottom and test actual platform composition. Never assume one `MarginV` value fits all sizes.
-- Avoid auto-generated subtitle overlap with faces, lips, props, graphics, or platform UI. Keep contrast and line lengths consistent.
+## 9. Delivery and QC
 
-## 8. Color, Continuity, and Source Integrity
-
-- Match exposure, white balance, contrast, and skin tone across the sequence before adding a creative look.
-- Use a project-consistent look: natural and crisp for informational/vlog content; controlled contrast and motivated palette for fiction; product colors must remain truthful.
-- Respect character continuity, wardrobe, setting, screen direction, spatial geography, product identity, and the order of real actions.
-- Remove AI-generation reference flashes, single-frame artifacts, unintended black frames, broken frames, and obvious continuity glitches when detectable. Never remove a frame that is a deliberate plot/visual beat without checking context.
-
-## 9. Quality-Control Checklist
-
-Before final delivery:
-1. Confirm aspect ratio, dimensions, duration, frame rate, audio sync, and intended audio stream with `ffprobe` or equivalent.
-2. Review the opening, every transition-heavy section, graphics, captions, ending, and any known-risk AI clips. Inspect a contact sheet or representative frames when tools permit.
-3. Check that motion graphics animate, remain inside safe zones, do not hide story-critical details, and have no off-screen text or unrendered assets.
-4. Listen to the beginning, dialogue-heavy sections, major SFX moments, and ending. Verify voice/music balance, no clipping, no unintended silence, and no abrupt SFX tails.
-5. Verify that the edit is not static/plain: use purposeful visual changes and designed emphasis appropriate to the preset.
-6. Verify that it is not over-edited: remove redundant zooms, repetitive whooshes, irrelevant graphics, random glitching, and transitions that damage comprehension or emotion.
-7. Export the requested master and subtitle sidecars where appropriate. Do not create extra compressed/Telegram variants unless requested.
-8. Report any unmet requested effect caused by missing tools/assets instead of pretending it rendered.
+- Match the output ratio to the chosen preset: 1920×1080 for standard 16:9 long-form; 1080×1920 for 9:16 vertical; otherwise obey the explicit requested ratio and preserve source/project FPS where practical.
+- Default to one polished requested master, named `<slug>-final.mp4`, plus `.srt` and `.ass` only when appropriate/generated. Do not create Telegram-size variants or other extra encodes unless requested.
+- Verify exact duration against the master audio/target, stream mapping, frame dimensions, frame rate, A/V sync, voice/music mix, captions, and file integrity with available inspection tools.
+- Review the opening, every hero graphic, every complex diagram/chart, representative transitions, the final minute/ending, and known-risk AI clips. Inspect a contact sheet or frames at useful intervals when possible.
+- Watch on-screen text at full resolution and a phone-size preview. Verify the story still makes sense with no narration and that graphics do not misstate the narration.
+- Correct defects and re-render where tools allow. Never claim an effect, source check, or QC step was completed unless it was actually performed. Report limitations honestly.

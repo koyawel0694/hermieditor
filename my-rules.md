@@ -1,62 +1,74 @@
-# Adaptive Editing Profile — Persistent Rules
+# Adaptive Editing Profile — Persistent Rules (v2.0)
 
-These are persistent preferences for this user's HermiEditor workspace. Read them with `my-style.md` before editing every new project.
+Read this file and the root `my-style.md` before every HermiEditor project. For long-form explainers, also read `skills/hermieditor/references/adaptive-long-form-explainer-motion-design.md`.
 
-## Rule 1 — One Adaptive Profile for Everything
-- This is the single editing profile for long-form YouTube, vlogs, Shorts, Reels, affiliate/product videos, and mini-drama series. Do not create disconnected styles for each format.
-- Use the matching preset in `my-style.md` and preserve the shared quality bar: polished pacing, designed visual hierarchy, deliberate motion, layered sound, consistent typography, clean finishing, and quality control.
-- A profile request for professional, motion-rich editing counts as explicit permission to use appropriate motion graphics, transitions, VFX, and SFX. Do not fall back to a plain-cut-only edit simply because the user did not name each effect individually.
-- Match effects to context. Motion-rich does not mean every clip needs an effect; it means each section has intentional visual and audio design where the content supports it.
+## Rule 1 — One profile, multiple formats
+Use one adaptive quality standard across long-form YouTube, explainers, vlogs, Shorts, Reels, product/affiliate videos, and mini-dramas. Resolve the requested format first. The user's explicit instructions outrank the defaults. Never force vertical output onto a landscape request or treat every genre the same.
 
-## Rule 2 — Resolve Format Before Editing
-- Inspect the user's brief first. The user's explicit format, aspect ratio, tone, duration, language, and platform take priority.
-- If not explicit, use the media's aspect ratio and project context to infer a preset. Do not crop a landscape project into vertical or a vertical project into landscape without a reason.
-- For mixed-format delivery, build the primary requested format first. Make alternate reframes only when requested or when the source composition supports them.
-- For long-form 16:9, use `my-style.md`'s long-form preset. For vlogs, preserve human moments and useful real-world ambience. For Shorts/Reels, use faster visual changes and platform-safe captions. For mini-drama, protect performances, dialogue, continuity, and dramatic timing.
+## Rule 2 — Explain with designed visuals, not endless AI clips
+For long-form informational/explainer projects, AI-generated video is an optional ingredient—not the default canvas. The edit must deliberately mix purpose-built motion graphics, text animation, diagrams, charts, timelines, comparisons, annotated screenshots, authentic/sourceable B-roll, real project footage, and selective AI illustration where it adds value.
 
-## Rule 3 — Default to Designed, Not Plain
-For informational, narrative-explainer, creator-led, and product content, actively look for moments that benefit from:
-- kinetic titles and section labels;
-- animated lower thirds and callouts;
-- number/stat/chart/diagram builds based on supplied facts;
-- comparison layouts, picture-in-picture, screen inserts, source cards, maps, timelines, or labeled B-roll;
-- speed ramps, motivated zooms, match cuts, masked transitions, and other appropriate video treatments;
-- layered ambience, Foley, graphic-entry sounds, transition whooshes, and selective emphasis impacts.
+Before final assembly, create a visual beat map. Every major narration beat must answer:
+1. What is the viewer meant to understand or feel?
+2. What visual form makes it easiest to understand (diagram, number, comparison, screenshot, footage, typography, timeline, etc.)?
+3. What exact words/data/assets appear on screen, and what is their source?
+4. How will the visual enter, develop, hold, and exit?
+5. Is sound useful here, or is clean dialogue/silence better?
 
-Do not use an element merely to hit a quota. Every design beat must support the story, clarity, emotion, comedy, proof, or retention.
+For explainers, target at least half of major explanatory beats as designed/sourced explanatory visuals when the topic supports them. Do not fake a quota, and do not pad the video with irrelevant graphics. If the script explains a relationship, mechanism, sequence, calculation, hierarchy, or comparison, prefer a custom diagram/graphic before generic AI footage.
 
-## Rule 4 — No Repetitive Effects
-- Do not use the same transition between every clip.
-- Do not apply automatic punch-ins on a fixed timer if they conflict with the shot, speaker, or emotion.
-- Do not add an SFX to every cut, word, caption, or graphic. Rotate, soften, or omit cues to avoid a cheap, repetitive soundboard feeling.
-- Avoid default glitch, RGB split, camera shake, lens flare, spin, and overdone whoosh effects. Use them only when motivated by the footage or genre.
-- Never let an overlay obscure a face, important action, product proof, chart label, subtitle, or other essential detail.
+## Rule 3 — Match visual medium to meaning
+- Abstract mechanisms, systems, causes/effects, and processes → animated diagrams, flowcharts, timelines, network maps, layered cross-sections, or visual metaphors.
+- Key concept or definition → kinetic typography plus a concrete supporting icon/example.
+- Quantities, comparisons, growth, or decline → a truthful chart, counter, comparison panel, or proportional diagram sourced from real values.
+- Actual people, places, events, physical processes → real/sourced footage or stills when factual accuracy matters; label any illustrative AI reconstruction as illustrative when confusion is possible.
+- Product/software/UI → real product shots/screenshots and animated callouts/masks/highlights; never use an image/video model to generate critical readable data or UI text.
+- Evidence and citations → use actual records/source extracts and concise attribution, never fabricated articles or interface screenshots.
+- Emotion, reaction, character, or memory → protect the acting and use naturalistic footage, sound, and story-native graphics rather than generic infographic overlays.
 
-## Rule 5 — Mini-drama Exception: Emotion Comes First
-- **Original Audio Primacy (STRICTLY NO TTS / Voiceover Dubbing)**: NEVER generate synthetic voiceover or dubbing (e.g., Kokoro TTS, Edge-TTS) for mini drama series. Mini drama footage already contains authentic recorded/generated character dialogue and environmental Foley. Use ONLY the original audio from the video clips.
-- **Subtitles & Single-Line Cadence**: Clean, static, elegant dialogue subtitles only — NO word-by-word karaoke highlights or animated bouncing words. Display **1 line at a time**, synchronized strictly to what the character is speaking at that moment. Never display multi-line stacked text blocks. Clean sans-serif (Liberation Sans / DejaVu Sans), 46-48pt bold, solid white (`&H00FFFFFF`) with 2.8–3.0px dark outline and 1.2px drop shadow. Centered lower-third with ~260–280px vertical margin (`MarginV=260-280`) staying clear of UI overlays without blocking characters' chests or faces. Strict synchronization with Filipino / Tagalog dialogue.
-- Do not place non-diegetic HUDs, explainer cards, or generic popup windows on top of serious acting. Use cinematic title/episode cards, story-native text messages, flashback markers, sound bridges, carefully motivated VFX, and purposeful Foley instead.
-- Preserve reaction pauses, eyelines, dialogue timing, character continuity, and geography. Crossfades are optional and must not cause dialogue overlap.
-- Use silence or a sustained sound cue when it creates a stronger dramatic beat than another impact.
+## Rule 4 — Script-to-visual timing
+- Use the final VO/transcript as the timeline spine. Align graphic reveals to semantic phrases or key words, not an arbitrary metronome.
+- During dense narration, aim for a meaningful visual refresh every ~5–10 seconds, but keep a visual on screen longer if complexity requires it. Use chapters and larger hero graphics for major turns in the argument.
+- Build diagrams step-by-step in the same order the narration explains them. Show relationships clearly before animating the next step.
+- After a key phrase/stat/diagram reveal, leave enough hold time for comprehension. Do not make the viewer read a label at the same moment another competing animation enters.
+- Do not show a graphic too early if it spoils the narrative; do not show it after the narration has already moved on.
 
-## Rule 6 — Use Real Assets; Verify Effects Exist
-- Inspect `my-sounds/catalog.json` and the installed template/reference directories before choosing sound files or animation templates.
-- Do not invent filenames, assume unavailable packages are installed, or claim a graphic is tracked if only fixed positioning is supported.
-- Prefer curated audio assets already in `my-sounds/`. If a requested asset/effect is missing, use a clean supported substitute or clearly report the limitation.
-- Use user-provided logos, photos, footage, fonts, and data accurately. Do not invent facts, prices, citations, statistics, product specifications, or story details.
+## Rule 5 — Graphics must be accurate
+- Never invent numbers, chart values, source citations, dates, quotes, URLs, UI labels, product claims, or map routes.
+- If a number/value is missing, leave it out or mark it as a placeholder in the planning file—never quietly make one up.
+- Charts require correct labels, units, date ranges, and truthful scales. Avoid 3D chart effects, misleading axis cuts, and decorative precision unsupported by the data.
+- Prefer editable/precise SVG or HTML/CSS/GSAP-built labels over AI-rendered text. Proofread every label and check for clipping.
+- Use image generation for visual metaphors, cutout illustrations, atmospheres, or non-text decorative/supporting assets only when they improve the explanation. Do not generate AI footage just to fill a visual gap that a simpler graphic could explain better.
 
-## Rule 7 — Audio Must Be Designed and Intelligible
-- Keep dialogue/important production audio in front. Automate or sidechain-duck BGM under speech based on actual source levels; do not copy a fixed BGM volume value across all projects.
-- Add appropriate room tone/ambience, real-action Foley, music transitions, and selective accent SFX. Include fade/tail handling so sounds do not terminate abruptly.
-- Prevent clipping, missing audio streams, voice masking, unintended silence, and music/SFX overpowering dialogue. Verify the final mixed audio and stream mapping.
+## Rule 6 — Professional motion, not motion spam
+- Use consistent easing, stroke weights, margins, component sizing, typography, and a limited palette.
+- Use spring/overshoot for a few energetic entries; use smoother eases for charts, diagrams, maps, and cinematic moments. Let animation settle before introducing another message.
+- Do not reuse the same transition for every cut or attach an SFX to every graphic, word, subtitle, or edit.
+- Avoid generic HUDs, random glitching, constant wiggle/parallax, gratuitous zooms, unnecessary lens flares, and decorative popups with no clear function.
+- Keep screens clean: one main idea, a small amount of supporting text, clear spatial connections, comfortable margins, and readable type at phone scale.
+- Always leave time to read charts, diagram labels, and source notes. Do not animate text so fast that the motion becomes a legibility failure.
 
-## Rule 8 — Inspect and Audit Every Render
-- Before rendering, check source duration, aspect ratio, audio, and any AI-video artifacts. Verify the edit plan against the requested output.
-- After rendering, verify the file with `ffprobe` or equivalent and inspect representative frames/timeline sections when available.
-- Check opening hook, scene/section flow, caption correctness, safe areas, animation timing, transition artifacts, sound balance, the ending, and audio/video sync.
-- Render a corrected version if clear mistakes are found and the tools permit it. Never state an issue was fixed unless the final output was checked.
+## Rule 7 — Sound is part of the visual design
+- Inspect the real `my-sounds/catalog.json`; use only available sound files. Never invent asset paths or names.
+- Use short clicks/ticks for clear UI interactions, whooshes for directional movement, subtle pings for key labels, restrained impacts for major reveals, and real ambience/Foley when the scene calls for it.
+- Narration alone does not require an SFX. Clean voice, natural ambience, and silence remain valid design choices.
+- Sync sound to the animation's landing/action; fade tails and duck music based on the actual dialogue. Keep speech intelligible and prevent clipping, music masking, or abrupt cuts.
 
-## Rule 9 — Deliver Cleanly
-- Default to one polished master in the requested aspect ratio plus `.srt` (and `.ass` if generated/needed). Provide extra compressed versions, alternate ratios, or multi-tier exports only when requested.
-- Use descriptive filenames and do not overwrite raw footage or original finals.
-- If a requested effect or quality check could not be performed, state that limitation transparently.
+## Rule 8 — Adapt by genre
+- **Long-form explainer:** motion graphics and visual explanation are a default expectation; alternate designed visuals and relevant footage; use 16:9 unless requested otherwise.
+- **Vlog:** preserve personality, spontaneous moments, real ambience, and natural pacing; use context graphics when useful.
+- **Shorts/Reels:** faster hooks/captions/graphic changes, 9:16 by default, and platform-safe composition.
+- **Product/affiliate:** show the actual item and authentic proof; animate accurate facts and feature labels.
+- **Mini-drama:** emotion, dialogue, continuity, and actor/character integrity first. Keep subtitles clean, avoid karaoke text for serious drama, and use only story-relevant graphics.
+  - **Original Audio Primacy (STRICTLY NO TTS / Voiceover Dubbing)**: NEVER generate synthetic voiceover or dubbing (e.g., Kokoro TTS, Edge-TTS) for mini drama series. Mini drama footage already contains authentic recorded/generated character dialogue and environmental Foley. Use ONLY original audio from video clips.
+  - **Single-Line Cadence for Subtitles**: Clean, static, elegant dialogue subtitles only — NO word-by-word karaoke highlights or animated bouncing words. Display **1 line at a time**, synchronized strictly to what the character is speaking at that moment. Never display multi-line stacked text blocks. Clean sans-serif (Liberation Sans / DejaVu Sans), 46-48pt bold, solid white (`&H00FFFFFF`) with 2.8–3.0px dark outline and 1.2px drop shadow. Centered lower-third with ~260–280px vertical margin (`MarginV=260-280`) staying clear of UI overlays without blocking characters' chests or faces. Strict synchronization with Filipino / Tagalog dialogue.
+
+## Rule 9 — Inspect actual capabilities and assets
+- Check installed HyperFrames/GSAP packages, existing style templates, fonts, available image/audio tools, and local SFX before choosing a technique.
+- Use the strongest real supported workflow. If an effect requires a tool that is not installed, find a supported fallback or tell the user what is missing; never claim the effect rendered if it did not.
+- Never overwrite original footage or raw project assets. Keep generated graphics/assets in a clearly named project subfolder where practical.
+
+## Rule 10 — QC, deliverables, and honesty
+Before delivery, verify dimensions/aspect ratio, frame rate, target duration, chosen video/audio streams, sync, dialogue clarity, captions, graphic spelling/legibility, safe zones, visual consistency, transitions, and SFX peaks. Inspect the opening, major graphics, representative middle sections, ending, and known-risk AI shots. Re-render clear defects when possible.
+
+Deliver one requested master by default, plus subtitle sidecars when useful/requested. Do not create extra compression tiers or alternate ratios unless asked. Name the final `<slug>-final.mp4`. Report any unavailable asset, unsupported effect, missing source, or QC check that could not be performed.

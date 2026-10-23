@@ -1,7 +1,7 @@
 ---
 name: hermieditor
-description: "Use when editing videos, shorts, reels, vlogs, mini-dramas, or long-form YouTube with HermiEditor."
-version: 1.2.0
+description: "Use when editing long-form YouTube videos, explainers, vlogs, shorts, reels, product videos, or mini-dramas with HermiEditor."
+version: 1.3.0
 author: John & Nessan
 license: MIT
 platforms: [linux, macos]
@@ -18,11 +18,12 @@ HermiEditor turns raw footage, talking-head recordings, product clips, and AI-ge
 Workspace root: `/home/john/Documents/hermieditor` (repo: `https://github.com/koyawel0694/hermieditor.git`, fallback: `/home/john/Documents/free247editor`)
 
 ## Universal Editing Profile — Adaptive Editing Studio
-Before editing any project, read the workspace `my-style.md` and `my-rules.md`. They are the user's persistent editorial profile and must be followed across every production mode. Detect or obey the requested format: 16:9 long-form YouTube, vlog/creator video, 9:16 Shorts/Reels, product/affiliate video, or mini-drama/short film. Use the corresponding preset, while keeping one shared professional quality bar.
 
-This user's default preference is motion-rich, professional editing rather than plain cuts. For informational, vlog, and product content, proactively use content-relevant motion graphics, lower thirds, callouts, data/diagram reveals, layered sound design, motivated transitions, and contextual video effects. Choose effects based on story beats; do not use repetitive transitions or an SFX on every cut. For mini-drama, prioritize performance, continuity, dialogue, emotional timing, cinematic transitions, ambience/Foley, and story-native graphics; do not place generic overlays over emotional scenes.
+Before every project, read the repository-root `my-style.md` and `my-rules.md`. For long-form explainers, also read `skills/hermieditor/references/adaptive-long-form-explainer-motion-design.md` and create a script-to-visual beat map from the available template before final assembly. This is one adaptive profile covering 16:9 long-form YouTube, explainer/documentary, vlog/creator content, 9:16 Shorts/Reels, product/affiliate videos, and mini-drama/short film.
 
-Profile precedence: the user's direct project instructions first; then the matching preset in `my-style.md` and the persistent rules in `my-rules.md`; then the generic production-mode defaults below. Do not let a generic mode default silently disable a preference expressly set in the user's profile.
+For this user, professional motion design is a default for informational/explainer content: purpose-built diagrams, kinetic key phrases, truthful charts, comparisons, timelines, annotated screenshots/source inserts, lower thirds, relevant B-roll, and selective VFX/SFX should be chosen proactively when they improve understanding or retention. Do not build long-form explainers from AI-generated video clips alone. Use AI footage selectively for illustration/atmosphere; do not use it for critical data, readable text, UI, or evidence.
+
+Profile precedence: direct task instructions first; then the matching preset in `my-style.md` and persistent rules in `my-rules.md`; then generic production-mode defaults. A generic mode must not silently disable a preference expressly set in the user's profile. Keep motion intentional, factually grounded, and tool-supported; do not apply an effect or sound merely to fill the frame.
 
 ## Directory Structure
 
@@ -33,18 +34,22 @@ Profile precedence: the user's direct project instructions first; then the match
 - `my-sounds/`: Curated 69-sound library (`mini-drama/`, `explainer/`, `us-niche/`), indexed in `catalog.json`.
 - `kit/`: The Herk Edit Kit engine and video projects (`kit/video-projects/<slug>-YYYY-MM-DD/`).
 - `references/`:
-  - `references/ADAPTIVE_EDITING_PROFILE.md`: Adaptive Editing Profile v1.0 specifications and presets.
+  - `references/ADAPTIVE_EDITING_PROFILE.md`: Adaptive Editing Profile specifications and presets.
+  - `references/adaptive-long-form-explainer-motion-design.md`: Long-form explainer motion design playbook (diagrams, charts, timing, hybrid visuals).
   - `references/motion-cards-and-telegram-delivery.md`: Motion graphics, HyperFrames mini PC rendering, sound design, Telegram limits.
   - `references/explainer-video-editing.md`: Explainer and documentary assembly, end-image hold rules, clean canvas, and transcription fallbacks.
   - `references/mini-drama-series-editing.md`: Assembly, pacing, simple subtitle styling, sidechain-ducked BGM score integration, and lossless multi-episode compilation.
   - `references/sound-design-and-sfx-library.md`: Sound effects library organization, FFmpeg stream channel mapping, and volume ducking curves.
+- `templates/`:
+  - `templates/adaptive-long-form-visual-beat-map.csv`: Script-to-visual beat map planning sheet.
+  - `templates/adaptive-explainer-project-brief.md`: Explainer brief and quality gate checklist.
 - `tools/transcribe.mjs`: Word-level transcription tool (Groq Whisper API or local `faster-whisper`).
 
 ## Sound Design & SFX Sourcing Discipline
 
 - **Strict Priority on Curated `my-sounds/` Library**:
-  - Spoken voiceover must ALWAYS be accompanied by real, curated sound files directly from `my-sounds/` (`my-sounds/explainer/`, `my-sounds/mini-drama/`, `my-sounds/us-niche/`), indexed in `catalog.json`.
-  - Strictly avoid synthesizing artificial procedural tones, clicks, or beeps with scipy/numpy when real recordings exist in the curated library. Procedural audio is strictly an emergency fallback.
+  - Use real curated sound files from `my-sounds/` (`my-sounds/explainer/`, `my-sounds/mini-drama/`, `my-sounds/us-niche/`), indexed in `catalog.json`, when a meaningful visual/action/transition cue calls for an audible accent. Voiceover alone does not require an SFX; clean dialogue, natural ambience, or silence may be the best choice.
+  - Avoid synthesizing procedural tones/clicks/beeps when a suitable real recording exists in the curated library. Use procedural sound only as a fallback when no suitable real asset is available and the requested workflow supports it.
 - **Affiliate & Explainer SFX Mapping (`my-sounds/explainer/`)**:
   - Solution / Brand Reveal: `pop-clean.mp3` (gain -3.0 dB) on "Ito ang katapat niyan" / brand reveals.
   - Metric / Spec Callout: `ding-bell-subtle.mp3` (gain -3.0 dB) on numbers, thickness, or key specs (e.g. "3mm").
@@ -58,7 +63,7 @@ Profile precedence: the user's direct project instructions first; then the match
 ### Mode A: Educational / Explainer Shorts
 - **Pacing**: Fast-paced, eliminate breath pauses > 0.35s, jump cuts, subtle punch-in scale zooms (5-8% scale) on narrative topic shifts.
 - **Subtitles**: Dynamic word-by-word active tracking captions in bold sans-serif (`Liberation Sans`), bold white with dark drop shadow/stroke, vibrant gold (`#FFD700` / `&H0000D7FF`) or electric cyan active highlight, positioned in upper-middle third safe zone (`MarginV=480`).
-- **Visuals & Overlays Discipline**: Follow the user's adaptive profile. For this user, professionally designed motion graphics are part of the default for informational/explainer content, even if each individual card was not separately requested. Use actual supporting facts/assets and purposeful timing. Keep animated cards/callouts away from faces and essential visual action; let clean shots breathe when additional graphics would reduce clarity. Never add decorative HUDs or unverified data just to fill the frame.
+- **Visuals & Overlays Discipline**: Follow the user's adaptive profile. For informational/explainer content, proactively use relevant designed motion graphics, progressive diagrams, key-phrase typography, truthful charts, comparisons, annotated screenshots, and purposeful B-roll even if each element was not separately requested. Keep graphics readable, source-grounded, and away from faces/essential action; clean footage should breathe when graphics would distract. Do not add decorative HUDs or invented data just to fill the frame.
 - **Audio & SFX Discipline**: Spoken voiceover is always front and center (normalized to -14 LUFS, 80Hz highpass, +2.5dB boost at 2.8kHz). Keep initial audio clean with voiceover only; add SFX on explicit request or from `my-sounds/`.
 - **Duration Sync**: Enforce hard duration sync by passing `-t <audio_duration>` directly to ffmpeg or post-trimming (`ffmpeg -y -ss 0.0 -t <audio_duration> -i composite.mp4 -c copy final_trimmed.mp4`).
 
@@ -103,13 +108,15 @@ Profile precedence: the user's direct project instructions first; then the match
   - Accent / Ding SFX: Clean bell ding (`ding-bell-subtle.mp3`) on product reveals, key test moments, and payoff moments.
   - Background Music: Acoustic lifestyle track at `volume=0.07` with a 6dB notch at 1200Hz (`equalizer=f=1200:t=q:w=1.2:g=-6,lowpass=f=7500`) and sensitive sidechain ducking against voiceover.
 
-### Mode D: Long-form YouTube / Documentary / Vlog (Usually 16:9)
-- **Format**: Default 1920x1080 landscape unless the user requests another ratio; preserve source frame rate where practical.
-- **Narrative**: Strong opening, clear chapters, relevant B-roll, visual examples, and deliberate section transitions. Keep personality, story logic, and factual accuracy intact.
-- **Motion Graphics**: Do not leave narration-heavy passages as static talking-head footage. Use relevant animated lower thirds, chapter labels, kinetic key phrases, stat/chart/diagram builds, timelines, comparisons, source cards, maps, picture-in-picture, and labeled B-roll where the content supports them. Aim for a meaningful visual refresh about every 6–12 seconds in narration-heavy sections, but allow longer holds for complex information, demonstrations, emotion, and cinematic footage.
-- **Transitions/VFX**: Default to clean cuts, J/L cuts, match cuts, and motivated movement/mask transitions. Use speed ramps, punch-ins, split screens, blur, and other VFX only when they improve clarity, energy, or narrative flow. Do not crossfade every clip.
-- **Audio**: Layer clear dialogue, source ambience, relevant Foley, music, and selective SFX. Automate/sidechain ducking against speech using actual source levels; avoid a fixed BGM volume for every file.
-- **Captions/Delivery**: Do not force karaoke captions onto long-form videos. Export a subtitle sidecar when available; burn captions only when requested or appropriate for the project. Verify 16:9 framing, audio stream mapping, duration, sync, and representative rendered sections before delivery.
+### Mode D: Long-form YouTube / Explainer / Documentary / Vlog (usually 16:9)
+- **Canvas**: Default 1920x1080 for standard 16:9 long-form; preserve requested/source frame rate and higher resolution when the project supports it. Never apply the portrait export preset to a landscape request.
+- **Planning**: Analyze the narration/transcript first, then create a visual beat map. Assign each major idea a visual purpose, type, exact labels/data, source/asset path, entrance/build/hold/exit, and sound cue or `none` before final assembly. Align estimated beats to the real narration timecodes before the final render.
+- **Hybrid visuals**: This user does not want long-form explainers made entirely from AI-generated video. Alternate editor-built motion graphics (diagrams, flowcharts, timelines, hierarchy/relationship maps, truthful charts, number reveals, comparisons, key phrases), real/sourced B-roll, genuine screenshots/UI/source excerpts, presenter/real footage, and selective clearly illustrative AI cutaways. Prefer a purpose-built diagram whenever it explains an abstract mechanism better than footage. Never use generated video for factual charts, critical UI/text, or evidence.
+- **Graphic rhythm**: Look for a meaningful visual refresh around every 5-10 seconds in dense narration, but do not cut to a timer. Use chapter-level hero graphics and smaller contextual labels/callouts. Reveal diagrams in narration order, hold readable results, and avoid competing simultaneous animations. At least half of major explanatory beats should be planned as designed/sourced explanatory visuals when the subject supports them; treat this as an editorial planning target, not a rigid screen-time quota.
+- **Motion and transitions**: Use consistent typography/grid/colors/easing; progressive line/node reveals, masked text, restrained spring settles, and selected motion transitions. Default to clean/match/J/L cuts. Avoid a repetitive transition every clip, constant zooms, gratuitous glitching, and decorative HUDs.
+- **Data integrity**: Use only supplied or verified figures, claims, quotations, source details, dates, and UI content. Use truthful chart labels/units/scales; never invent missing values. Prefer SVG/HTML/GSAP or other exact-text-capable tools for readable data and labels.
+- **Sound**: Layer voice, appropriate ambience/Foley, music ducking, and selective SFX. SFX must land with a real visual/action beat; do not add one to every sentence or card. Use only sound files that exist in the local catalog.
+- **Delivery/QC**: Verify dimensions, frame rate, duration, stream mapping, A/V sync, caption accuracy, text legibility, graphic timing, actual render, dialogue balance, and end frame. Output a 16:9 master unless otherwise requested; do not force Shorts captions or vertical safe zones into landscape.
 
 ## AI Video Generation Artifacts & Pitfalls
 
@@ -136,7 +143,7 @@ Profile precedence: the user's direct project instructions first; then the match
   ```
 - **Special Unicode Characters in Filenames**: Files frequently contain ellipses (`…` U+2026), brackets, or symbols. Always quote variables and use glob matching to prevent silent script failures.
 - **Single Video Delivery (Final Master Only)**:
-  - Generate ONLY 1 video file by default: `<slug>-final.mp4` (CRF 17-19, 192k AAC stereo, `+faststart`).
+  - Generate ONLY 1 video file by default: `<slug>-final.mp4`, using the chosen/requested format (1920x1080 for standard 16:9 long-form, 1080x1920 for 9:16 vertical, or the explicitly requested ratio), CRF 17-19 where appropriate, 192k AAC stereo, and `+faststart`. Preserve source/project FPS where practical.
   - Do NOT generate redundant multi-tier files (`<slug>-under20mb.mp4`, `<slug>-hq-48mb.mp4`, or `<slug>-v1.mp4`) unless explicitly requested by the user.
 - **Explicit Stream Mapping (`-map 0:v -map 1:a`)**:
   - When multiplexing base video and master audio, ALWAYS explicitly map video from `0:v` and mixed audio from `1:a` (`-map 0:v -map 1:a`). Omitting `-map` causes FFmpeg to pick `0:a` (the camera/foley track) and completely drop the voiceover track!
