@@ -7,7 +7,7 @@ license: MIT
 platforms: [linux, macos]
 metadata:
   hermes:
-    tags: [video-editing, short-form, long-form, youtube, vlogs, ffmpeg, subtitles, sfx, reels, tiktok, mini-drama, popupledger, hermieditor]
+    tags: [video-editing, short-form, long-form, youtube, vlogs, ffmpeg, subtitles, sfx, reels, tiktok, mini-drama, adaptive-profile, hermieditor]
     related_skills: [deepclip, deepcut, deepcaption]
 ---
 
@@ -17,7 +17,7 @@ HermiEditor turns raw footage, talking-head recordings, product clips, and AI-ge
 
 Workspace root: `/home/john/Documents/hermieditor` (repo: `https://github.com/koyawel0694/hermieditor.git`, fallback: `/home/john/Documents/free247editor`)
 
-## Universal Editing Profile — PopUpLedger Adaptive Studio
+## Universal Editing Profile — Adaptive Editing Studio
 Before editing any project, read the workspace `my-style.md` and `my-rules.md`. They are the user's persistent editorial profile and must be followed across every production mode. Detect or obey the requested format: 16:9 long-form YouTube, vlog/creator video, 9:16 Shorts/Reels, product/affiliate video, or mini-drama/short film. Use the corresponding preset, while keeping one shared professional quality bar.
 
 This user's default preference is motion-rich, professional editing rather than plain cuts. For informational, vlog, and product content, proactively use content-relevant motion graphics, lower thirds, callouts, data/diagram reveals, layered sound design, motivated transitions, and contextual video effects. Choose effects based on story beats; do not use repetitive transitions or an SFX on every cut. For mini-drama, prioritize performance, continuity, dialogue, emotional timing, cinematic transitions, ambience/Foley, and story-native graphics; do not place generic overlays over emotional scenes.
@@ -33,7 +33,7 @@ Profile precedence: the user's direct project instructions first; then the match
 - `my-sounds/`: Curated 69-sound library (`mini-drama/`, `explainer/`, `us-niche/`), indexed in `catalog.json`.
 - `kit/`: The Herk Edit Kit engine and video projects (`kit/video-projects/<slug>-YYYY-MM-DD/`).
 - `references/`:
-  - `references/POPUPLEDGER_UNIVERSAL_EDITING_PROFILE.md`: PopUpLedger Universal Adaptive Editing Profile v1.0 specifications and presets.
+  - `references/ADAPTIVE_EDITING_PROFILE.md`: Adaptive Editing Profile v1.0 specifications and presets.
   - `references/motion-cards-and-telegram-delivery.md`: Motion graphics, HyperFrames mini PC rendering, sound design, Telegram limits.
   - `references/explainer-video-editing.md`: Explainer and documentary assembly, end-image hold rules, clean canvas, and transcription fallbacks.
   - `references/mini-drama-series-editing.md`: Assembly, pacing, simple subtitle styling, sidechain-ducked BGM score integration, and lossless multi-episode compilation.

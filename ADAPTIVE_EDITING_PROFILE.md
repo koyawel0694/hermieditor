@@ -1,4 +1,4 @@
-# PopUpLedger Adaptive Editing Profile
+# Adaptive Editing Profile
 
 One all-in-one profile for long-form YouTube, vlogs, Shorts, Reels, product/affiliate videos, and mini-dramas.
 

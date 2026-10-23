@@ -1,4 +1,4 @@
-# PopUpLedger Studio — Adaptive Editing Style
+# Adaptive Editing Profile — Visual Style Guide
 
 **Profile version:** 1.0  
 **Purpose:** One reusable editing identity for long-form YouTube, vlogs, YouTube Shorts, Reels, and mini-drama series.  
@@ -12,7 +12,7 @@ Priority order:
 1. The user's direct instructions for this project.
 2. The correct format/genre preset in this file.
 3. The available footage, script, recorded audio, brand assets, and factual source material.
-4. The default PopUpLedger visual identity below.
+4. The default adaptive visual identity below.
 
 Before editing, inspect all project assets, aspect ratios, durations, audio tracks, available fonts, motion-graphics templates, and `my-sounds/catalog.json`. If the brief explicitly names a format, obey it. Otherwise infer from the request and media; state the inference in the edit plan when it could materially affect the result.
 
@@ -20,7 +20,7 @@ Before editing, inspect all project assets, aspect ratios, durations, audio trac
 
 ### Brand handling
 - If a supplied logo, channel intro, thumbnail, brand guide, or recurring graphic exists, sample and reuse its real visual language.
-- Do not claim to have inspected the PopUpLedger channel's visual branding unless actual channel assets or videos are available in the project.
+- Do not claim to have inspected the channel's visual branding unless actual channel assets or videos are available in the project.
 - If no brand assets exist, use this fallback palette for informational graphics: **graphite `#111318`, off-white `#F5F7FA`, signal lime `#C5FF3D`, and clear cyan `#58D5FF`**. Use lime for the primary highlight and cyan sparingly for secondary information.
 - The fallback palette is not mandatory for cinematic fiction or naturalistic vlogs. For those, preserve the scene's emotional color grade and use the brand accent only on chapter cards, opener/ender graphics, or other appropriate overlays.
 - Use one clean sans-serif family for most graphics (e.g. Inter, Manrope, or a locally installed equivalent); verify the font exists before rendering. Use a restrained display face for titles only when available.

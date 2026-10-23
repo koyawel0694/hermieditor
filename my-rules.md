@@ -1,4 +1,4 @@
-# PopUpLedger Studio — Persistent Editing Rules
+# Adaptive Editing Profile — Persistent Rules
 
 These are persistent preferences for this user's HermiEditor workspace. Read them with `my-style.md` before editing every new project.
 
