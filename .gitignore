@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+kit/
 kit/node_modules/
 
 # Python environments & cache
@@ -10,6 +11,10 @@ __pycache__/
 
 # Local secrets & env
 .env
+
+# Backups
+*.backup.*
+*.bak
 
 # Media inbox & outbox (keep directory structure)
 inbox/*
