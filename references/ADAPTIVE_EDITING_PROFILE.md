@@ -7,6 +7,7 @@ Premium story-first editing: purposeful motion graphics, cinematic or energetic 
 
 ## Format adaptation
 - **Long-form YouTube:** 16:9 by default; chapter-based story flow, rich graphics, data/diagram reveals, B-roll, source/context inserts, layered audio, visual refreshes through narration-heavy sections.
+- **Explainer videos (Clean Canvas Rule):** In animation, papercraft, stop-motion, and 3D visual explainers, strictly remove floating cards, pop-up windows, or overlay graphic boxes over the art. Keep the screen clean with pure visual footage, dynamic subtitles, motivated transitions, video effects, and layered SFX.
 - **Vlogs:** creator personality first; location/context graphics, animated lower thirds, maps when supported, playful accents, real ambience, and natural pacing.
 - **Shorts/Reels:** 9:16 by default; immediate hook, active captions for spoken explainers, faster visual changes, strong callouts, meaningful transition/SFX accents, and platform-safe framing.
 - **Mini-drama:** protect performance, continuity, emotional holds, clean dialogue subtitles, cinematic motivated transitions, story-native graphics, and expressive sound design; avoid generic floating explainer cards over acting.

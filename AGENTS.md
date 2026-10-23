@@ -24,6 +24,7 @@ When the user asks you to edit a video:
    - Check duration of audio and clips with `ffprobe`.
    - Check first 1.5s for AI video reference image flash artifacts (`ffmpeg -ss 0.0 -t 1.5 -i clip.mp4 -filter_complex "select='gt(scene,0.25)',metadata=print" -f null -`).
 4. **Plan visuals and captions**:
+   - **Explainer Clean Canvas Rule**: In explainer videos (animation, stop-motion, papercraft, 3D dioramas), **remove floating cards or pop-up boxes over the footage**. Keep the presentation focused: clean visual footage, active tracking subtitles in safe zone, smooth motivated transitions, layered SFX/foley, and video effects (punch-in zooms, speed ramps, reframes). Reserve floating motion cards strictly for vlogs, talking heads, and affiliate product showcases.
    - For long-form explainers, read the adaptive explainer motion-design reference and create a script-to-visual beat map before final assembly. Use diagrams, progressive graphic builds, truthful charts, comparisons, timelines, annotated real screenshots/source inserts, and relevant B-roll; AI-generated footage is selective, not the default for every sentence.
    - Captions depend on format: long-form uses an optional subtitle sidecar and no karaoke by default; Shorts/Reels can use dynamic phrase/word emphasis; mini-drama uses clean dialogue subtitles. Verify transcription, especially names, figures, and Tagalog/Taglish.
    - Use format-specific safe zones. Do not reuse a 1080x1920 portrait `MarginV` value in landscape projects.

@@ -37,6 +37,7 @@ For every section, ask: **What does the viewer need to understand, feel, compare
 
 ### A. Long-form YouTube / Explainer / Documentary (default 16:9)
 - **Canvas:** 1920×1080 for a standard 16:9 master. Preserve genuine 4K when the source/workflow supports it; do not upscale merely to claim 4K. Match source/project frame rate where practical, commonly 24/25/30 fps.
+- **Explainer Clean Canvas Rule (No Floating Cards):** For stop-motion, papercraft, claymation, and 3D animation explainer sequences, DO NOT add motion graphics cards, pop-up windows, or floating stat boxes over the art. The animation is the hero and retention hook; keep the visual clean with pure footage, motivated transitions, layered SFX, video effects, and subtitles only. Full-screen diagram takeovers are permitted only when replacing footage for abstract systems.
 - **Editorial goal:** Every major spoken idea should become visible, not just audible. Mix designed motion graphics, diagrams, typography, charts, carefully chosen real/sourced B-roll, screenshots/UI, maps/timelines, and occasional real or AI-generated footage. The edit should not be 100% AI-generated video just because AI clips are easy to generate.
 - **Explainer visual target:** At least half of the *major explanatory beats* should use purpose-built or sourced explanatory visuals (e.g., diagrams, animated text, truthful charts, comparisons, labeled screenshots, maps/timelines, or concrete B-roll) when the topic supports them. This is a planning target, not a rigid screen-time quota; use story and accuracy to decide.
 - **Narration rhythm:** In dense voiceover passages, aim for a meaningful visual shift about every 5–10 seconds (graphic build, meaningful crop/reframe, new B-roll, screenshot annotation, diagram phase, or section change). A complex diagram may need 5–12 seconds to develop and remain readable. Hold important facts long enough to read; let emotional or cinematic footage breathe. Never force a cut on a stopwatch.
@@ -54,7 +55,7 @@ For every section, ask: **What does the viewer need to understand, feel, compare
 ### C. Shorts / Reels / Other Vertical Short-form
 - **Canvas:** 1080×1920 9:16 unless another ratio is requested. Reframe each shot intentionally; never blindly center-crop important subjects.
 - Start with the strongest visual claim, question, result, conflict, or curiosity gap. Avoid long logo intros.
-- Use higher information density than long-form: phrase-based dynamic captions, kinetic key terms, fast-but-readable diagrams, proof callouts, comparisons, inserts, and strong visual payoffs.
+- **Explainer Clean Canvas Rule (No Floating Cards):** In vertical explainer videos (stop-motion, papercraft, 3D dioramas), remove floating cards or pop-up boxes over the video. Keep the presentation focused: clean visual footage, active word tracking captions in the safe zone, smooth crossfade transitions, layered SFX/foley, and video effects (punch-in zooms, speed ramps, reframes). Reserve motion cards strictly for talking heads, creator vlogs, or affiliate product showcases.
 - Punch-ins (roughly 5–8%), speed ramps, masks, whip transitions, freezes, and impact moments are options, not mandatory decorations. Protect comprehension.
 - Keep critical text out of platform UI areas and preview the final composition as a phone-sized frame.
 

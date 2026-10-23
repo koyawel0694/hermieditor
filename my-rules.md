@@ -55,7 +55,12 @@ For explainers, target at least half of major explanatory beats as designed/sour
 - Sync sound to the animation's landing/action; fade tails and duck music based on the actual dialogue. Keep speech intelligible and prevent clipping, music masking, or abrupt cuts.
 
 ## Rule 8 — Adapt by genre
-- **Long-form explainer:** motion graphics and visual explanation are a default expectation; alternate designed visuals and relevant footage; use 16:9 unless requested otherwise.
+- **Explainer Videos (Clean Visual Canvas Rule — STRICTLY NO CARDS / POP-UP OVERLAYS)**:
+  - In educational and documentary explainer videos (especially animation, stop-motion, papercraft, claymation, 3D dioramas, and visual sequences), **DO NOT add motion graphics cards, floating stat boxes, or pop-up windows over the footage**. The animation/diorama art is already high-production value and is the primary visual hook; floating cards clutter the screen and obstruct the central action.
+  - **What MUST be present**: Clean video footage, dynamic active tracking subtitles in safe zone, smooth motivated transitions (0.5s fade-in from black, 0.367–0.5s `xfade` crossfades), curated tactical SFX and foley, and video effects (subtle 5–8% punch-ins, speed ramps, reframes).
+  - **Still Image / Thumbnail Hold**: In explainer videos containing an accompanying still image or thumbnail, hold it at the very END of the video for at least 0.1–0.2 seconds (e.g. 0.20s), never at the beginning.
+  - **Where to use cards**: Reserve motion graphics cards, pop-ups, and comparison tables strictly for personal vlogs, talking-head videos, or affiliate product showcases.
+- **Long-form explainer:** when using full-screen editorial diagrams, use them as full scene takeovers rather than floating cards over animation; alternate designed visuals and relevant footage; use 16:9 unless requested otherwise.
 - **Vlog:** preserve personality, spontaneous moments, real ambience, and natural pacing; use context graphics when useful.
 - **Shorts/Reels:** faster hooks/captions/graphic changes, 9:16 by default, and platform-safe composition.
 - **Product/affiliate:** show the actual item and authentic proof; animate accurate facts and feature labels.
