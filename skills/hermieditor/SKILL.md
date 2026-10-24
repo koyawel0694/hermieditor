@@ -1,13 +1,13 @@
 ---
 name: hermieditor
-description: "Use for adaptive long-form YouTube, explainers, vlogs, Shorts/Reels, product videos, and mini-dramas with motion design."
-version: 1.3.0
+description: "Use for adaptive long-form YouTube, explainers, vlogs, Shorts/Reels, product videos, and mini-dramas with motion design. Triggers on 'Edit this mini drama series', editing vlogs, explainers, or commercial shorts."
+version: 1.4.0
 author: John & Nessan
 license: MIT
 platforms: [linux, macos]
 metadata:
   hermes:
-    tags: [video-editing, short-form, long-form, youtube, vlogs, ffmpeg, subtitles, sfx, reels, tiktok, mini-drama, adaptive-profile, hermieditor]
+    tags: [video-editing, short-form, long-form, youtube, vlogs, ffmpeg, subtitles, sfx, reels, tiktok, mini-drama, adaptive-profile, hermieditor, edit-this-mini-drama-series]
     related_skills: [deepclip, deepcut, deepcaption]
 ---
 
@@ -80,24 +80,48 @@ Profile precedence: direct user instructions → selected creative direction and
 - **Duration Sync**: Enforce hard duration sync by passing `-t <audio_duration>` directly to ffmpeg or post-trimming (`ffmpeg -y -ss 0.0 -t <audio_duration> -i composite.mp4 -c copy final_trimmed.mp4`).
 
 ### Mode B: Mini Drama Series (Vertical Serye / Fiction)
-- **Subtitles**:
-  - Simple, static, elegant subtitles only — strictly NO word-by-word karaoke highlights or animated bouncing words.
-  - Typeface: Clean sans-serif (`Liberation Sans` or `DejaVu Sans`), 46-48pt, bold.
-  - Color & Contrast: Pure white (`&H00FFFFFF`) with 2.8–3.0px dark outline stroke and 1.2px shadow for 100% legibility against all backgrounds.
-  - Safe Zone: Lower-third center (`MarginV=260–280` on 1080x1920) to stay safely above TikTok/Reels UI overlays without blocking characters' chests or hands.
-  - Text & Timing: Aligned exactly to spoken dialogue in Tagalog/Filipino or English.
-- **Transitions**:
-  - Smooth cinematic transitions: 0.5s gentle crossfade (`xfade=transition=fade:duration=0.5:offset=...`) paired with 0.5s audio cross-dissolve (`acrossfade=d=0.5:c1=tri:c2=tri`).
-  - Smooth 0.5s fade-in from black at video intro.
-  - Cliffhanger ending: 1.5s freeze-frame hold on the final questioning/tearful close-up, followed by a 1.2–1.3s fade-to-black.
-- **Dialogue Timing & Reaction Breathing Room**:
-  - When speech in clip A ends near the boundary or clip B starts near 0.0s, pad clip A with a 0.5s reaction hold (`tpad=stop_mode=clone:stop_duration=0.5` and `apad=pad_dur=0.5`) so the crossfade occurs in the pause, preventing overlapping speech.
-- **Sound Design & SFX**:
-  - Dialogue Primacy & Mastering: Boost voice by 1.35x (`volume=1.35`) with highpass at 80Hz and +2.5dB vocal presence boost at 2.8kHz (`equalizer=f=2800:t=q:w=1.0:g=2.5`).
-  - Environmental Bed: Continuous background tone (interior rain, room tone, outdoor street).
-  - Tactical Drama SFX: Subtle brass shop door chimes, somatic heartbeat flutter pulses, delicate tactile shimmer on physical brushes, and emotional tension swells/impacts on cliffhangers.
-  - BGM Score: Acoustic or ambient instrumental bed leveled to `volume=0.07` with a 6dB scoop at 1200Hz.
-  - Sensitive Sidechain Ducking: Always wire sensitive sidechain compression (`threshold=0.02:ratio=3.5:attack=50:release=450`) so music instantly ducks an additional 6–10 dB the moment any character speaks.
+- **Universal Trigger Phrase**: **"Edit this mini drama series"**
+  - When John says "Edit this mini drama series", instantly activate this complete production pipeline.
+- **The Signature 4-Theme BGM Suite (Suno / Udio / ElevenLabs Instrumental)**:
+  - Mini-drama projects utilize a dedicated 4-theme instrumental suite tailored so voiceover dialogue stays 100% crisp:
+    1. **Track 1: System Euphoria (The 10x Multiplier Cash Swell)**:
+       - *Use for*: System reward triggers, bank balance notifications, dopamine drops.
+       - *Mixing rule*: Let Track 1 **peak at -8 dB** right when the 10x System notification dings!
+    2. **Track 2: Ella’s Grace (Tender Campus Romance)**:
+       - *Use for*: Quiet library/courtyard moments with Ella, genuine gratitude, no-strings-attached talks.
+       - *Mixing rule*: Set Track 2 strictly at **-16 dB to -18 dB under dialogue**.
+    3. **Track 3: Cold Resolve (Rafa’s Underdog Swagger)**:
+       - *Use for*: Rafa walking calmly past bullies, checking his phone/money in secret, unbothered confidence.
+       - *Mixing rule*: Leveled at **-14 dB to -16 dB** (unbothered swagger).
+    4. **Track 4: Whispers & Suspicion (Celine/Basti Cliffhangers)**:
+       - *Use for*: High-society gossip, Celine spotting them across the hall, dramatic episode cut-offs.
+       - *Mixing rule*: Ducked to **-20 dB** during speech; swelling to **-10 dB to -12 dB** during cliffhanger cut-offs.
+  - **Vocal Corridor Notch**: Apply 1.2 kHz parametric notch scoop (`equalizer=f=1200:t=q:w=1.5:g=-3.5`) across all BGM tracks to preserve dialogue intelligibility.
+- **STRICTLY NO SFX Rule (Dialogue Primacy)**:
+  - Do NOT use synthetic whooshes, braams, gongs, or impact risers unless the user explicitly requests them. Natural dialogue and authentic raw clip foley lead the mix.
+  - Master voiceover dialogue: 80 Hz highpass filter, +2.5 dB vocal presence boost at 2.8 kHz (`equalizer=f=2800:t=q:w=1.5:g=2.5`), normalized to broadcast standard **-14 to -16 LUFS** (EBU R128) with **-1.5 dBFS True Peak** headroom.
+- **Visuals & Cinematic Color Grading**:
+  - Apply filmic S-curve contrast, lifted deep blacks, cool teal shadow tint (`bs=+0.02, rs=-0.02`), warm skin midtones (`rm=+0.03, gm=+0.01`), and subtle golden specular highlights across all footage:
+    `curves=m='0/0 0.18/0.14 0.5/0.51 0.82/0.85 1/1':r='0/0 0.5/0.52 1/1':b='0/0.02 0.5/0.49 1/0.98',colorbalance=rs=-0.02:gs=0.00:bs=0.02:rm=0.03:gm=0.01:bm=-0.02:rh=0.02:gh=0.01:bh=-0.01,eq=saturation=1.06:contrast=1.04`
+- **Cut Wrong Parts (AI Generation Artifact Removal)**:
+  - Pre-trim AI reference image flash frames (typically frames 0 to 4 / 0.04s–0.17s) at clip heads and pad tail with cloned frames (`tpad=stop_mode=clone`) to preserve exact timeline duration.
+  - Mute off-screen prompt vocal leaks (e.g. director prompts or accidental English generation whispers) using time-gated volume filters (`volume='if(between(t,st,en),0,1)':eval=frame`).
+- **Motivated Transitions**:
+  - **Continuous Action/Dialogue**: Use hard cuts (no transition) to maintain eye-lines, conversational rhythm, and confrontational pacing.
+  - **Location / Act Shifts**: Use dip to black (0.4s–0.5s fade-out, 0.4s–0.5s fade-in) for physical relocation (e.g. cafeteria to walkway, stairwell to courtyard) or emotional turning points.
+  - **Cliffhanger Endings**: Apply 1.5s freeze-frame hold (`tpad=stop_mode=clone:stop_duration=1.5`) on the final dramatic reveal/countdown, followed by a 1.2s fade-to-black.
+- **Subtitles & Safe Zones**:
+  - Simple, static, elegant 1-line-at-a-time subtitles (strictly NO bouncing karaoke).
+  - Typeface: Liberation Sans Bold (46pt), Pure White (`&H00FFFFFF`) with 3.0px dark outline stroke and 1.2px drop shadow.
+  - Golden HUD System Voice Style: Cyan/Gold (`&H00D7FFFF`) for diegetic system notifications.
+  - Safe Zone: Lower-third safe zone (`MarginV=280` on 1080x1920) to clear TikTok, Reels, and YouTube Shorts bottom captions and side buttons.
+  - Burn into master video and produce companion `.ass` and `.srt` sidecars.
+- **Multi-Episode Marathon Compilation**:
+  - Compile all series episodes into 1 unified feature film with embedded MP4 chapter markers.
+- **Dual Deliverable & Telegram Tagging**:
+  - Export pristine master `<slug>-final.mp4` (CRF 18, 1080x1920 @ 24fps).
+  - Export optimized mobile stream `<slug>-final-45mb.mp4` (< 45MB, 880k video / 96k audio) for instant playback without Telegram bot 50MB transcoding delays.
+  - Always tag `MEDIA:/home/john/Documents/hermieditor/outbox/<slug>-final-45mb.mp4` in the final delivery message.
 
 ### Mode C: Affiliate & Product Commercial Shorts (TikTok / Reels / Shopee / Lazada)
 - **Pacing & 5-Step Narrative Arc**:

@@ -23,6 +23,23 @@ HermiEditor is an adaptive video editing suite for Hermes Agent, covering 16:9 l
 - `tools/`: Free word-level transcription via Groq or local faster-whisper.
 - `kit/`: Herk Edit Kit engine (sparse-checked-out for HyperFrames and motion cards).
 
+### Universal Trigger: "Edit this mini drama series"
+When John says **"Edit this mini drama series"**:
+1. Automatically activate the complete **PopUpLedger v3.0 Mode B: Mini Drama Series** pipeline.
+2. Ingest the 4-track Signature BGM Suite:
+   - Track 1 (System Euphoria): Peaks at **-8 dB** on system reward triggers & balance dings.
+   - Track 2 (Ella’s Grace): Strictly **-16 dB to -18 dB under dialogue**.
+   - Track 3 (Cold Resolve): Leveled at **-14 dB to -16 dB** (unbothered underdog swagger).
+   - Track 4 (Whispers & Suspicion): Ducked to **-20 dB** during dialogue, swelling to **-11 dB** on cliffhangers.
+   - Notch filter: 1.2 kHz parametric notch scoop on all BGM for crisp voice intelligibility.
+3. STRICTLY NO SFX (dialogue primacy). Voice mastered to -14 LUFS / -1.5 True Peak with 80Hz highpass and +2.5dB at 2.8kHz.
+4. Cinematic color grading (filmic S-curve, lifted deep blacks, teal shadows, warm midtones).
+5. Cut wrong parts: Pre-trim AI reference flash frames (0.04s–0.17s) with tail cloned padding; mute off-screen prompt vocal leaks.
+6. Motivated transitions: Hard cuts for continuous action/dialogue; dip to black (0.4s–0.5s) for location/act shifts; 1.5s freeze-frame hold on cliffhangers.
+7. Subtitles: Static, elegant, 46pt Liberation Sans Bold at MarginV=280 lower-third safe zone, burned + .ass/.srt sidecars.
+8. Multi-episode compilation: Compile all episodes into 1 unified feature film with MP4 chapter markers.
+9. Deliverables: Master `<slug>-final.mp4` + Telegram mobile stream `<slug>-final-45mb.mp4` tagged with `MEDIA:/home/john/Documents/hermieditor/outbox/<slug>-final-45mb.mp4`.
+
 ## How Hermes Operates HermiEditor
 
 When the user asks you to edit a video:
