@@ -688,5 +688,275 @@
     "size_kb": 29.6,
     "sample_rate": 48000,
     "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "achievement_chime_reveal.mp3",
+    "rel_path": "chinese-drama/achievement_chime_reveal.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/achievement_chime_reveal.mp3",
+    "duration": 2.43,
+    "size_kb": 60.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "chinese_clock_gong_heavy.mp3",
+    "rel_path": "chinese-drama/chinese_clock_gong_heavy.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/chinese_clock_gong_heavy.mp3",
+    "duration": 7.89,
+    "size_kb": 240.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "cinematic_deep_impact.mp3",
+    "rel_path": "chinese-drama/cinematic_deep_impact.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/cinematic_deep_impact.mp3",
+    "duration": 4.1,
+    "size_kb": 113.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "dagger_slice_swish.mp3",
+    "rel_path": "chinese-drama/dagger_slice_swish.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/dagger_slice_swish.mp3",
+    "duration": 0.31,
+    "size_kb": 11.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "dramatic_bell_toll.mp3",
+    "rel_path": "chinese-drama/dramatic_bell_toll.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/dramatic_bell_toll.mp3",
+    "duration": 47.23,
+    "size_kb": 1427.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "drum_sub_impact.mp3",
+    "rel_path": "chinese-drama/drum_sub_impact.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/drum_sub_impact.mp3",
+    "duration": 5.54,
+    "size_kb": 136.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "glass_break_hammer_thud.mp3",
+    "rel_path": "chinese-drama/glass_break_hammer_thud.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/glass_break_hammer_thud.mp3",
+    "duration": 1.49,
+    "size_kb": 35.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "glass_suspense_hit.mp3",
+    "rel_path": "chinese-drama/glass_suspense_hit.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/glass_suspense_hit.mp3",
+    "duration": 4.75,
+    "size_kb": 142.1,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "heartbeat_deep_impact.mp3",
+    "rel_path": "chinese-drama/heartbeat_deep_impact.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/heartbeat_deep_impact.mp3",
+    "duration": 3.5,
+    "size_kb": 108.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "heartbeat_mystery_pulse.mp3",
+    "rel_path": "chinese-drama/heartbeat_mystery_pulse.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/heartbeat_mystery_pulse.mp3",
+    "duration": 67.32,
+    "size_kb": 2039.3,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "heartbeat_swoosh_transition.mp3",
+    "rel_path": "chinese-drama/heartbeat_swoosh_transition.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/heartbeat_swoosh_transition.mp3",
+    "duration": 8.15,
+    "size_kb": 231.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "long_resonance_gong.mp3",
+    "rel_path": "chinese-drama/long_resonance_gong.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/long_resonance_gong.mp3",
+    "duration": 9.69,
+    "size_kb": 291.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "metal_clash_glass.mp3",
+    "rel_path": "chinese-drama/metal_clash_glass.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/metal_clash_glass.mp3",
+    "duration": 0.6,
+    "size_kb": 15.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "metal_explosion_hit.mp3",
+    "rel_path": "chinese-drama/metal_explosion_hit.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/metal_explosion_hit.mp3",
+    "duration": 4.05,
+    "size_kb": 123.3,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "punch_combo_body.mp3",
+    "rel_path": "chinese-drama/punch_combo_body.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/punch_combo_body.mp3",
+    "duration": 3.08,
+    "size_kb": 56.4,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "punch_heavy_body.mp3",
+    "rel_path": "chinese-drama/punch_heavy_body.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/punch_heavy_body.mp3",
+    "duration": 1.72,
+    "size_kb": 35.3,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "punch_rapid_strike.mp3",
+    "rel_path": "chinese-drama/punch_rapid_strike.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/punch_rapid_strike.mp3",
+    "duration": 1.38,
+    "size_kb": 42.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "saber_quick_cut.mp3",
+    "rel_path": "chinese-drama/saber_quick_cut.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/saber_quick_cut.mp3",
+    "duration": 2.09,
+    "size_kb": 33.6,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "slap_loud_impact.mp3",
+    "rel_path": "chinese-drama/slap_loud_impact.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/slap_loud_impact.mp3",
+    "duration": 3.13,
+    "size_kb": 62.0,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "sword_blade_swish.mp3",
+    "rel_path": "chinese-drama/sword_blade_swish.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/sword_blade_swish.mp3",
+    "duration": 1.7,
+    "size_kb": 36.7,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "sword_fast_whoosh.mp3",
+    "rel_path": "chinese-drama/sword_fast_whoosh.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/sword_fast_whoosh.mp3",
+    "duration": 1.15,
+    "size_kb": 12.2,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "sword_metallic_strike.mp3",
+    "rel_path": "chinese-drama/sword_metallic_strike.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/sword_metallic_strike.mp3",
+    "duration": 1.36,
+    "size_kb": 42.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "trailer_epic_impact.mp3",
+    "rel_path": "chinese-drama/trailer_epic_impact.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/trailer_epic_impact.mp3",
+    "duration": 4.91,
+    "size_kb": 150.8,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "trailer_suspense_riser.mp3",
+    "rel_path": "chinese-drama/trailer_suspense_riser.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/trailer_suspense_riser.mp3",
+    "duration": 2.61,
+    "size_kb": 80.9,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "whoosh_fast_transition.mp3",
+    "rel_path": "chinese-drama/whoosh_fast_transition.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/whoosh_fast_transition.mp3",
+    "duration": 1.38,
+    "size_kb": 43.5,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "whoosh_stutter_tension.mp3",
+    "rel_path": "chinese-drama/whoosh_stutter_tension.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/whoosh_stutter_tension.mp3",
+    "duration": 2.56,
+    "size_kb": 82.3,
+    "sample_rate": 44100,
+    "channels": 2
+  },
+  {
+    "category": "chinese-drama",
+    "filename": "whoosh_swish_whip.mp3",
+    "rel_path": "chinese-drama/whoosh_swish_whip.mp3",
+    "abs_path": "/home/john/Documents/hermieditor/my-sounds/chinese-drama/whoosh_swish_whip.mp3",
+    "duration": 1.8,
+    "size_kb": 56.3,
+    "sample_rate": 44100,
+    "channels": 2
   }
 ]

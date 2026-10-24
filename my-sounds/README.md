@@ -1,11 +1,12 @@
 # free247editor Sound Library (`my-sounds/`)
 
-Curated sound effects library for `free247editor`, sourced and verified from MyInstants US charts and sound catalogs.
+Curated sound effects library for `free247editor`, sourced and verified from MyInstants US charts, Mixkit production audio, and sound catalogs.
 
-Total sounds: **69 items** across 3 core production categories:
+Total sounds: **96 items** across 4 core production categories:
 1. `mini-drama/`: 24 sounds (Cinematic tension, emotional swells, foley, somatic cues)
-2. `explainer/`: 24 sounds (UI ticks, pop reveals, transitions, finance/data hits)
-3. `us-niche/`: 21 sounds (Viral US social retention hooks, memes, pacing punchlines)
+2. `chinese-drama/`: 27 sounds (Slaps, blade glares, deep sub-braams, fast whooshes, tension risers, gongs)
+3. `explainer/`: 24 sounds (UI ticks, pop reveals, transitions, finance/data hits)
+4. `us-niche/`: 21 sounds (Viral US social retention hooks, memes, pacing punchlines)
 
 ---
 
@@ -105,7 +106,43 @@ The most widely recognized retention hooks and comedic punctuation sounds on US 
 
 ---
 
-## 4. FFmpeg Mixing Recipes
+## 4. Chinese Short Drama Series (`my-sounds/chinese-drama/`)
+
+Curated sound effects for Chinese vertical drama shorts (微短剧 / 爽文短剧 / 总裁逆袭 / 战神归来), modeled after viral TikTok / Douyin drama tropes:
+
+| Filename | Duration | Best Use Case | Mixing Level |
+| :--- | :--- | :--- | :--- |
+| `slap_loud_impact.mp3` | 1.96s | Exaggerated face slap / humiliation strike (耳光回响) | `volume=0.38` |
+| `punch_heavy_body.mp3` | 1.12s | Heavy blunt physical body hit / collar jerk | `volume=0.35` |
+| `punch_rapid_strike.mp3` | 1.33s | Fast combat strike / sudden defensive block | `volume=0.35` |
+| `punch_combo_body.mp3` | 1.78s | Multi-strike brawl impact sequence | `volume=0.35` |
+| `sword_metallic_strike.mp3` | 1.36s | Intense stare / power reveal metallic blade clash (寒芒一闪) | `volume=0.30` |
+| `sword_blade_swish.mp3` | 1.15s | Sharp blade unsheathing on threatening dialogue | `volume=0.30` |
+| `sword_fast_whoosh.mp3` | 0.38s | Ultra-fast whip swoosh on sudden camera pan to shocked face | `volume=0.28` |
+| `dagger_slice_swish.mp3` | 0.36s | Quick dagger flick / micro cutting whoosh | `volume=0.28` |
+| `saber_quick_cut.mp3` | 1.05s | Sharp metallic saber slice on executive order | `volume=0.30` |
+| `cinematic_deep_impact.mp3` | 3.55s | Sub-bass impact on shocking identity reveal ("He's the Chairman!") | `volume=0.35` |
+| `trailer_epic_impact.mp3` | 4.73s | Huge epic trailer hit for episode climax / cliffhanger | `volume=0.35` |
+| `drum_sub_impact.mp3` | 4.26s | Deep cinematic bass drum strike on dramatic threat | `volume=0.35` |
+| `metal_explosion_hit.mp3` | 3.87s | Crushing psychological shock hit on villain's defeat | `volume=0.32` |
+| `whoosh_fast_transition.mp3` | 1.36s | Rapid whip pan transition between character reaction shots | `volume=0.25` |
+| `whoosh_swish_whip.mp3` | 1.78s | High-speed motion blur swoosh for fast camera dolly | `volume=0.25` |
+| `whoosh_stutter_tension.mp3` | 2.59s | Glitch/stutter whoosh on sudden pause or realization | `volume=0.28` |
+| `trailer_suspense_riser.mp3` | 2.53s | Escalating pitch tension riser leading up to the slap/reveal | `volume=0.25` |
+| `heartbeat_deep_impact.mp3` | 3.42s | Somatic heavy heartbeat pulse during tense stare-downs | `volume=0.35` |
+| `heartbeat_swoosh_transition.mp3` | 7.26s | Layered heartbeat swoosh leading into high-stakes decision | `volume=0.30` |
+| `heartbeat_mystery_pulse.mp3` | 63.95s | Sustained suspenseful heartbeat bed for long dialogue confrontations | `volume=0.22` |
+| `glass_break_hammer_thud.mp3` | 1.12s | Heavy table slap / tea cup smashing in anger (怒摔茶杯) | `volume=0.35` |
+| `glass_suspense_hit.mp3` | 4.47s | Resonant shattered glass sting on shocking truth | `volume=0.32` |
+| `metal_clash_glass.mp3` | 0.48s | Sharp teacup clink / tableware strike during argument | `volume=0.30` |
+| `chinese_clock_gong_heavy.mp3` | 7.53s | Deep resonant bronze gong strike for fateful turns | `volume=0.30` |
+| `long_resonance_gong.mp3` | 9.14s | Sustained harmonic gong decay for ancient/dynasty lineage reveals | `volume=0.28` |
+| `dramatic_bell_toll.mp3` | 44.75s | Looming dramatic bell toll for life-or-death ultimatum | `volume=0.25` |
+| `achievement_chime_reveal.mp3` | 1.91s | Celestial chime / golden shimmer on Centurion card / system reward | `volume=0.30` |
+
+---
+
+## 5. FFmpeg Mixing Recipes
 
 ### Rule of Thumb: Spoken Dialogue Primacy
 As codified in `my-rules.md`, dialogue is **ALWAYS** the dominant foreground element (-18 to -22 dBFS RMS). Never let SFX overpower speech:

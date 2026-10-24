@@ -22,6 +22,8 @@ inbox/*
 !inbox/.gitkeep
 outbox/*
 !outbox/.gitkeep
+output/
+references/tiktok_refs/
 
 # Render project caches
 .*_tmp/
