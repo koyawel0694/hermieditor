@@ -11,10 +11,9 @@ Strictly adheres to HermiEditor rules & user specifications:
   * 0.4s dramatic dips-to-black between major location/chronological shifts (Beats 1->2, 2->3, 4->5, 6->7, 9->10).
   * Fast motivated hard cuts across direct action/conceptual progressions (Beats 3->4, 5->6, 7->8, 8->9).
   * High-tension dossier slam into black cliffhanger hold.
-- Sound Design & Audio Mastering:
+- Sound Design & Audio Mastering (Clean Voiceover Master - NO SFX):
+  * Pure spoken voiceover primacy with ZERO added sound effects.
   * Mastered dialogue with 80Hz highpass, +2.5dB vocal presence boost at 2.8kHz, loudnorm -14 LUFS.
-  * 15 precision tactical SFX cues from my-sounds/ (sub-booms, metric thuds, cash register chimes,
-    official stamp punches, keyboard typing, heavy van door slams, razor etching clinks, dossier trailer booms, and braam impacts).
 - Cinematic Tactical Color Grading: Filmic cold cyan/tungsten corporate curve, crisp contrast, rich blacks.
 - Dynamic Safe-Zone Subtitles: 18 Whisper-timed cues in the lower-third safe zone (MarginV=280).
 - Deliverables: outbox/cold-silicon-smuggling-final.mp4 + 45mb version + sidecar .srt & .ass files.
@@ -139,100 +138,6 @@ COLOR_GRADE = (
     "colorbalance=rs=-0.01:gs=0.00:bs=0.03:rm=-0.01:gm=0.01:bm=0.02:rh=-0.01:gh=0.00:bh=0.02,"
     "eq=contrast=1.06:saturation=1.02"
 )
-
-# 15 Precision Tactical Sound Design Cues
-SFX_CUES = [
-    {
-        "file": "mini-drama/cinematic-sub-boom.mp3",
-        "time": 0.00,
-        "vol": 0.20,
-        "desc": "Opening extreme macro silicon die sub-boom swell"
-    },
-    {
-        "file": "explainer/cinematic-thud-metric.mp3",
-        "time": 4.10,
-        "vol": 0.22,
-        "desc": "Metric impact thud on 'pure cocaine'"
-    },
-    {
-        "file": "explainer/whoosh-transition-fast.mp3",
-        "time": 5.15,
-        "vol": 0.20,
-        "desc": "Fast whoosh dip into warehouse smuggler crate"
-    },
-    {
-        "file": "explainer/cash-register-cha-ching.mp3",
-        "time": 7.10,
-        "vol": 0.18,
-        "desc": "Subtle register cash chime on '$30,000'"
-    },
-    {
-        "file": "explainer/cinematic-thud-metric.mp3",
-        "time": 11.80,
-        "vol": 0.24,
-        "desc": "Heavy metric thud on '$50,000 in cash'"
-    },
-    {
-        "file": "mini-drama/cinematic-bass-drop.mp3",
-        "time": 16.45,
-        "vol": 0.22,
-        "desc": "Deep bass drop dip into Washington sanctions briefing"
-    },
-    {
-        "file": "mini-drama/punch-impact.mp3",
-        "time": 18.30,
-        "vol": 0.30,
-        "desc": "Heavy official customs brass stamp striking document"
-    },
-    {
-        "file": "explainer/whoosh-transition-fast.mp3",
-        "time": 23.55,
-        "vol": 0.20,
-        "desc": "Transition whoosh into sterile silicon fab cleanroom"
-    },
-    {
-        "file": "explainer/ding-bell-subtle.mp3",
-        "time": 25.50,
-        "vol": 0.18,
-        "desc": "Subtle precision chime on 300mm wafer vacuum robotic transfer"
-    },
-    {
-        "file": "mini-drama/suspense-tension-riser.mp3",
-        "time": 31.20,
-        "vol": 0.20,
-        "desc": "Tension riser swell on Dubai shadow market"
-    },
-    {
-        "file": "explainer/keyboard-typing-fast.mp3",
-        "time": 35.50,
-        "vol": 0.16,
-        "desc": "Rapid encrypted keystrokes on logistics terminal"
-    },
-    {
-        "file": "mini-drama/heavy-door-slam.mp3",
-        "time": 44.50,
-        "vol": 0.28,
-        "desc": "Heavy cargo van door slam on midnight transshipment"
-    },
-    {
-        "file": "chinese-drama/metal_clash_glass.mp3",
-        "time": 49.50,
-        "vol": 0.22,
-        "desc": "Rotary tool metallic friction etching off serial numbers"
-    },
-    {
-        "file": "mini-drama/cinematic-boom-trailer.mp3",
-        "time": 70.50,
-        "vol": 0.32,
-        "desc": "Authoritative classified dossier table impact"
-    },
-    {
-        "file": "mini-drama/cinematic-braam.mp3",
-        "time": 73.60,
-        "vol": 0.35,
-        "desc": "Signature trailer braam on 'cannot stop it' cliffhanger finish"
-    }
-]
 
 # 18 Synchronized Subtitle Cues strictly aligned with Whisper audio cadence
 SUBTITLES = [
@@ -360,7 +265,7 @@ def s_to_ass(s):
         cs -= 100
     return f"{hrs:01d}:{mins:02d}:{secs:02d}.{cs:02d}"
 
-def step1_assemble_base_video():
+def step1_assemble_base_video(force=False):
     """
     Assemble the 10 documentary beats:
     - Retime each clip with setpts to match its scene's exact spoken narration
@@ -373,6 +278,9 @@ def step1_assemble_base_video():
     print("=" * 65)
 
     base_video_path = os.path.join(WORK_DIR, "base_video.mp4")
+    if not force and os.path.exists(base_video_path) and os.path.getsize(base_video_path) > 10 * 1024 * 1024:
+        print(f"Reusing existing base video: {base_video_path}")
+        return base_video_path
 
     cmd = [FFMPEG, "-y"]
     for beat in BEATS:
@@ -428,63 +336,34 @@ def step1_assemble_base_video():
 
 def step2_build_master_audio():
     """
-    Build master documentary audio track:
-    1. Master spoken voiceover (alnilam) with 80Hz HPF, +2.5dB vocal presence at 2.8kHz, loudnorm -14 LUFS.
-    2. Extract and subtle-mix foley bed from raw video clips.
-    3. Layer 15 precision tactical SFX cues from my-sounds/.
-    4. Mix with normalize=0 for absolute narration primacy.
+    Build clean master documentary audio track (NO SFX):
+    Pure spoken voiceover primacy:
+    - Master voiceover (alnilam) with 80Hz HPF, +2.5dB vocal presence at 2.8kHz, loudnorm -14 LUFS.
+    - Zero added SFX for authentic, clean documentary clarity.
     """
     print("=" * 65)
-    print("STEP 2: Building Master Audio Track & 15 Tactical SFX Cues")
+    print("STEP 2: Building Master Audio Track (Pure Spoken Voiceover - NO SFX)")
     print("=" * 65)
 
     vo_raw = os.path.join(INBOX, "alnilam_1.25x_2026-10-24_23-26-16.wav")
     master_audio_path = os.path.join(WORK_DIR, "master_audio.wav")
 
-    cmd = [FFMPEG, "-y", "-i", vo_raw]
-
-    # Add SFX inputs
-    for cue in SFX_CUES:
-        sfx_path = os.path.join(MY_SOUNDS, cue["file"])
-        cmd.extend(["-i", sfx_path])
-
-    filter_complex = []
-
-    # 1. Master voiceover
-    filter_complex.append(
-        "[0:a]highpass=f=80,equalizer=f=2800:t=q:w=1.0:g=2.5,loudnorm=I=-14:LRA=7:TP=-1.5[vo]"
-    )
-
-    # 2. Prepare each SFX cue
-    sfx_labels = []
-    for idx, cue in enumerate(SFX_CUES):
-        sfx_in_idx = 1 + idx
-        delay_ms = int(round(cue["time"] * 1000))
-        vol = cue["vol"]
-        label = f"sfx_{idx}"
-        sfx_labels.append(f"[{label}]")
-        filter_complex.append(
-            f"[{sfx_in_idx}:a]aresample=48000,aformat=channel_layouts=stereo,"
-            f"volume={vol:.3f},adelay={delay_ms}|{delay_ms},apad[{label}]"
-        )
-
-    # 3. Mix VO with SFX
-    total_inputs = 1 + len(SFX_CUES)
-    all_inputs_str = "[vo]" + "".join(sfx_labels)
-    filter_complex.append(
-        f"{all_inputs_str}amix=inputs={total_inputs}:duration=longest:dropout_transition=0:normalize=0,"
-        f"apad=whole_dur={TOTAL_DUR},afade=t=out:st={TOTAL_DUR-0.4:.2f}:d=0.4[a_out]"
-    )
-
-    cmd.extend([
-        "-filter_complex", ";\n".join(filter_complex),
-        "-map", "[a_out]",
+    cmd = [
+        FFMPEG, "-y",
+        "-i", vo_raw,
+        "-af", (
+            "highpass=f=80,"
+            "equalizer=f=2800:t=q:w=1.0:g=2.5,"
+            "loudnorm=I=-14:LRA=7:TP=-1.5,"
+            f"apad=whole_dur={TOTAL_DUR},"
+            f"afade=t=out:st={TOTAL_DUR-0.4:.2f}:d=0.4"
+        ),
         "-t", str(TOTAL_DUR),
         "-ar", "48000", "-ac", "2",
         master_audio_path
-    ])
+    ]
 
-    run_cmd(cmd, "Mixing Master Audio Track with Voiceover Primacy & SFX Bed")
+    run_cmd(cmd, "Mastering Pure Spoken Voiceover Dialogue (-14 LUFS, NO SFX)")
     return master_audio_path
 
 def step3_generate_subtitles():
@@ -541,10 +420,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def step4_render_final_master(base_video, master_audio, ass_path):
     """
-    Burn in ASS subtitles in safe zone and mux with master audio into final deliverable.
+    Burn in ASS subtitles in safe zone and mux with clean master audio into final deliverable.
     """
     print("=" * 65)
-    print("STEP 4: Rendering Final Master Deliverable & Mobile Version")
+    print("STEP 4: Rendering Final Master Deliverable & Mobile Version (NO SFX)")
     print("=" * 65)
 
     final_master_mp4 = os.path.join(OUTBOX, f"{SLUG}-final.mp4")
@@ -564,7 +443,7 @@ def step4_render_final_master(base_video, master_audio, ass_path):
         final_master_mp4
     ]
 
-    run_cmd(cmd, "Rendering Final High-Quality Master MP4 Deliverable")
+    run_cmd(cmd, "Rendering Final High-Quality Master MP4 Deliverable (Clean Audio)")
 
     size_mb = os.path.getsize(final_master_mp4) / (1024 * 1024)
     print(f"Master Render Output: {final_master_mp4} ({size_mb:.2f} MB)")
@@ -648,10 +527,10 @@ def main():
     os.makedirs(OUTBOX, exist_ok=True)
 
     print("#######################################################")
-    print("HermiEditor: PROJECT COLD SILICON Production Pipeline")
+    print("HermiEditor: PROJECT COLD SILICON (Clean Voiceover - NO SFX)")
     print("#######################################################")
 
-    base_video = step1_assemble_base_video()
+    base_video = step1_assemble_base_video(force=False)
     master_audio = step2_build_master_audio()
     srt_path, ass_path = step3_generate_subtitles()
     final_master, telegram_mp4 = step4_render_final_master(base_video, master_audio, ass_path)
