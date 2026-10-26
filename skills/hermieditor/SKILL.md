@@ -80,26 +80,31 @@ Profile precedence: direct user instructions → selected creative direction and
 - **Duration Sync**: Enforce hard duration sync by passing `-t <audio_duration>` directly to ffmpeg or post-trimming (`ffmpeg -y -ss 0.0 -t <audio_duration> -i composite.mp4 -c copy final_trimmed.mp4`).
 
 ### Mode B: Mini Drama Series (Vertical Serye / Fiction)
-- **Universal Trigger Phrase**: **"Edit this mini drama series"**
-  - When John says "Edit this mini drama series", instantly activate this complete production pipeline.
-- **The Signature 4-Theme BGM Suite (Suno / Udio / ElevenLabs Instrumental)**:
-  - Mini-drama projects utilize a dedicated 4-theme instrumental suite tailored so voiceover dialogue stays 100% crisp:
+- **Universal Trigger Phrases**: **"Edit this mini drama series"** or alike prompts (e.g. "edit this video using adaptive editing profile").
+  - When John uses these triggers, instantly activate this complete production pipeline.
+- **The Signature 4-Theme BGM Suite & Silence vs. Music Discipline (Anti-Wall-to-Wall Rule)**:
+  - **Silence vs. Music Restraint**: DO NOT run BGM continuously across every scene. Music is only as powerful as the silence that precedes it. Wall-to-wall BGM induces auditory fatigue and weakens dramatic stakes.
+  - **Scenes that MUST remain in pure diegetic silence (NO BGM)**:
+    1. *Deadlines, Ticking Clocks & Official Stamping*: Natural room murmur, ticking clocks at 4:55 PM, paper rustling, and heavy mechanical stamp thuds need total acoustic silence to feel tense, visceral, and grounded.
+    2. *Campus Gossip, Hushed Whispers & Screen Viewing*: Real social intrigue is quiet, insidious, and sneaky. Keeping gossiping corridors and digital notifications un-scored preserves authentic tension.
+    3. *Confrontations, Standoffs & Verbal Dominance*: When a bully steps into the protagonist's path or a verbal showdown erupts, cut to **DEAD SILENCE**. Dead silence commands 100% viewer focus and gives calm, assertive rebuttals maximum moral authority.
+  - **Dedicated 4-Theme Instrumental Suite (Apply ONLY when specifically motivated)**:
     1. **Track 1: System Euphoria (The 10x Multiplier Cash Swell)**:
        - *Use for*: System reward triggers, bank balance notifications, dopamine drops.
-       - *Mixing rule*: Let Track 1 **peak at -8 dB** right when the 10x System notification dings!
+       - *Mixing rule*: Let Track 1 **peak at -8 dBFS** right when the 10x System notification dings!
     2. **Track 2: Ella’s Grace (Tender Campus Romance)**:
-       - *Use for*: Quiet library/courtyard moments with Ella, genuine gratitude, no-strings-attached talks.
-       - *Mixing rule*: Set Track 2 strictly at **-16 dB to -18 dB under dialogue**.
+       - *Use for*: Quiet library/courtyard moments with Ella, genuine gratitude, tears of relief, no-strings-attached talks.
+       - *Mixing rule*: Set Track 2 strictly at **-16 dBFS to -18 dBFS under dialogue**.
     3. **Track 3: Cold Resolve (Rafa’s Underdog Swagger)**:
        - *Use for*: Rafa walking calmly past bullies, checking his phone/money in secret, unbothered confidence.
-       - *Mixing rule*: Leveled at **-14 dB to -16 dB** (unbothered swagger).
+       - *Mixing rule*: Leveled at **-14 dBFS to -16 dBFS** (unbothered swagger).
     4. **Track 4: Whispers & Suspicion (Celine/Basti Cliffhangers)**:
-       - *Use for*: High-society gossip, Celine spotting them across the hall, dramatic episode cut-offs.
-       - *Mixing rule*: Ducked to **-20 dB** during speech; swelling to **-10 dB to -12 dB** during cliffhanger cut-offs.
+       - *Use for*: High-society gossip/intrigue, villain arrivals (Basti/Celine), aristocratic staredowns, dramatic episode cut-offs.
+       - *Mixing rule*: Ducked to **-20 dBFS** during speech; swelling to **-10 dBFS to -12 dBFS** during cliffhanger freeze-frame cut-offs.
   - **Vocal Corridor Notch**: Apply 1.2 kHz parametric notch scoop (`equalizer=f=1200:t=q:w=1.5:g=-3.5`) across all BGM tracks to preserve dialogue intelligibility.
 - **STRICTLY NO SFX Rule (Dialogue Primacy)**:
   - Do NOT use synthetic whooshes, braams, gongs, or impact risers unless the user explicitly requests them. Natural dialogue and authentic raw clip foley lead the mix.
-  - Master voiceover dialogue: 80 Hz highpass filter, +2.5 dB vocal presence boost at 2.8 kHz (`equalizer=f=2800:t=q:w=1.5:g=2.5`), normalized to broadcast standard **-14 to -16 LUFS** (EBU R128) with **-1.5 dBFS True Peak** headroom.
+  - Master voiceover dialogue: 80 Hz highpass filter, +2.5 dB vocal presence boost at 2.8 kHz (`equalizer=f=2800:t=q:w=1.5:g=2.5`), normalized to broadcast standard **-14 to -15 LUFS** (EBU R128) with **-1.5 dBFS True Peak** headroom.
 - **Visuals & Cinematic Color Grading**:
   - Apply filmic S-curve contrast, lifted deep blacks, cool teal shadow tint (`bs=+0.02, rs=-0.02`), warm skin midtones (`rm=+0.03, gm=+0.01`), and subtle golden specular highlights across all footage:
     `curves=m='0/0 0.18/0.14 0.5/0.51 0.82/0.85 1/1':r='0/0 0.5/0.52 1/1':b='0/0.02 0.5/0.49 1/0.98',colorbalance=rs=-0.02:gs=0.00:bs=0.02:rm=0.03:gm=0.01:bm=-0.02:rh=0.02:gh=0.01:bh=-0.01,eq=saturation=1.06:contrast=1.04`
@@ -107,15 +112,16 @@ Profile precedence: direct user instructions → selected creative direction and
   - Pre-trim AI reference image flash frames (typically frames 0 to 4 / 0.04s–0.17s) at clip heads and pad tail with cloned frames (`tpad=stop_mode=clone`) to preserve exact timeline duration.
   - Mute off-screen prompt vocal leaks (e.g. director prompts or accidental English generation whispers) using time-gated volume filters (`volume='if(between(t,st,en),0,1)':eval=frame`).
 - **Motivated Transitions**:
+  - **Intro**: 0.5s fade-in from black.
   - **Continuous Action/Dialogue**: Use hard cuts (no transition) to maintain eye-lines, conversational rhythm, and confrontational pacing.
-  - **Location / Act Shifts**: Use dip to black (0.4s–0.5s fade-out, 0.4s–0.5s fade-in) for physical relocation (e.g. cafeteria to walkway, stairwell to courtyard) or emotional turning points.
+  - **Location / Act Shifts**: Use dip to black (0.4s–0.5s fade-out, 0.4s–0.5s fade-in) for physical relocation (e.g. cafeteria to walkway, cashier to lobby, courtyard to colonnade shadows) or emotional turning points.
   - **Cliffhanger Endings**: Apply 1.5s freeze-frame hold (`tpad=stop_mode=clone:stop_duration=1.5`) on the final dramatic reveal/countdown, followed by a 1.2s fade-to-black.
 - **Subtitles & Safe Zones**:
   - Simple, static, elegant 1-line-at-a-time subtitles (strictly NO bouncing karaoke).
   - Typeface: Liberation Sans Bold (46pt), Pure White (`&H00FFFFFF`) with 3.0px dark outline stroke and 1.2px drop shadow.
   - Golden HUD System Voice Style: Cyan/Gold (`&H00D7FFFF`) for diegetic system notifications.
   - Safe Zone: Lower-third safe zone (`MarginV=280` on 1080x1920) to clear TikTok, Reels, and YouTube Shorts bottom captions and side buttons.
-  - Burn into master video and produce companion `.ass` and `.srt` sidecars.
+  - Burn into master video and produce companion `.ass` and `.srt` sidecars in both `inbox/<slug>/` and `outbox/`.
 - **Multi-Episode Marathon Compilation**:
   - Compile all series episodes into 1 unified feature film with embedded MP4 chapter markers.
 - **Dual Deliverable & Telegram Tagging**:
