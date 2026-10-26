@@ -85,21 +85,21 @@ Profile precedence: direct user instructions → selected creative direction and
 - **The Signature 4-Theme BGM Suite & Silence vs. Music Discipline (Anti-Wall-to-Wall Rule)**:
   - **Silence vs. Music Restraint**: DO NOT run BGM continuously across every scene. Music is only as powerful as the silence that precedes it. Wall-to-wall BGM induces auditory fatigue and weakens dramatic stakes.
   - **Scenes that MUST remain in pure diegetic silence (NO BGM)**:
-    1. *Deadlines, Ticking Clocks & Official Stamping*: Natural room murmur, ticking clocks at 4:55 PM, paper rustling, and heavy mechanical stamp thuds need total acoustic silence to feel tense, visceral, and grounded.
-    2. *Campus Gossip, Hushed Whispers & Screen Viewing*: Real social intrigue is quiet, insidious, and sneaky. Keeping gossiping corridors and digital notifications un-scored preserves authentic tension.
-    3. *Confrontations, Standoffs & Verbal Dominance*: When a bully steps into the protagonist's path or a verbal showdown erupts, cut to **DEAD SILENCE**. Dead silence commands 100% viewer focus and gives calm, assertive rebuttals maximum moral authority.
+    1. *Deadlines, Ticking Clocks & Official Actions*: Natural room murmur, ticking countdown clocks, paper rustling, and heavy mechanical stamp thuds need total acoustic silence to feel tense, visceral, and grounded.
+    2. *Gossip, Hushed Whispers & Screen Viewing*: Social intrigue is quiet, insidious, and sneaky. Keeping gossiping corridors, background murmur, and notification chimes un-scored preserves authentic tension.
+    3. *Confrontations, Standoffs & Verbal Dominance*: When an adversary blocks the protagonist's path or a showdown erupts, cut to **DEAD SILENCE**. Dead silence commands 100% viewer focus and gives calm, assertive dialogue maximum moral authority.
   - **Dedicated 4-Theme Instrumental Suite (Apply ONLY when specifically motivated)**:
-    1. **Track 1: System Euphoria (The 10x Multiplier Cash Swell)**:
-       - *Use for*: System reward triggers, bank balance notifications, dopamine drops.
-       - *Mixing rule*: Let Track 1 **peak at -8 dBFS** right when the 10x System notification dings!
-    2. **Track 2: Ella’s Grace (Tender Campus Romance)**:
-       - *Use for*: Quiet library/courtyard moments with Ella, genuine gratitude, tears of relief, no-strings-attached talks.
+    1. **Track 1: Climactic Triumph / Reward Swell (Euphoria)**:
+       - *Use for*: System reward triggers, breakthrough achievements, and major dopamine payoff moments.
+       - *Mixing rule*: Peak at **-8 dBFS** right on the achievement chime or reward ding!
+    2. **Track 2: Emotional Core / Romance / Sincere Bond (Tender Melodic Bed)**:
+       - *Use for*: Intimate dialogue, heartfelt gratitude, tears of relief, and quiet emotional resolution.
        - *Mixing rule*: Set Track 2 strictly at **-16 dBFS to -18 dBFS under dialogue**.
-    3. **Track 3: Cold Resolve (Rafa’s Underdog Swagger)**:
-       - *Use for*: Rafa walking calmly past bullies, checking his phone/money in secret, unbothered confidence.
+    3. **Track 3: Underdog Resolve / Composed Swagger (Steady Rhythmic Bed)**:
+       - *Use for*: Protagonist walking unbothered past adversaries, quiet confidence, and calculated determination.
        - *Mixing rule*: Leveled at **-14 dBFS to -16 dBFS** (unbothered swagger).
-    4. **Track 4: Whispers & Suspicion (Celine/Basti Cliffhangers)**:
-       - *Use for*: High-society gossip/intrigue, villain arrivals (Basti/Celine), aristocratic staredowns, dramatic episode cut-offs.
+    4. **Track 4: Suspicion, Rivalry & Intrigue (Antagonist / Cliffhanger Bed)**:
+       - *Use for*: Rival/antagonist appearances, high-society scheming, intense staredowns, and dramatic episode cut-offs.
        - *Mixing rule*: Ducked to **-20 dBFS** during speech; swelling to **-10 dBFS to -12 dBFS** during cliffhanger freeze-frame cut-offs.
   - **Vocal Corridor Notch**: Apply 1.2 kHz parametric notch scoop (`equalizer=f=1200:t=q:w=1.5:g=-3.5`) across all BGM tracks to preserve dialogue intelligibility.
 - **STRICTLY NO SFX Rule (Dialogue Primacy)**:

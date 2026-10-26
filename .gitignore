@@ -17,6 +17,15 @@ __pycache__/
 *.bak
 .profile-backups/
 
+# Private video project scripts & one-off edit pipelines
+edit_*.py
+compile_*.py
+dub_*.py
+mix_*.py
+render_*.py
+*.tmp
+*.log
+
 # Media inbox & outbox (keep directory structure)
 inbox/*
 !inbox/.gitkeep
@@ -24,6 +33,20 @@ outbox/*
 !outbox/.gitkeep
 output/
 references/tiktok_refs/
+
+# Render project caches
+.*_tmp/
+kit/video-projects/*/renders/
+kit/video-projects/*/assets/
+kit/video-projects/*/.concat*.txt
+kit/video-projects/*/*.wav
+kit/video-projects/*/*.mp4
+kit/video-projects/*/*.ass
+kit/video-projects/*/*.srt
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
 
 # Render project caches
 .*_tmp/

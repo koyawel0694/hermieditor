@@ -60,14 +60,14 @@ For dedicated motion graphics, kinetic typography, and music video samples, avoi
 For episodic mini-dramas triggered by "Edit this mini drama series" or alike prompts:
 1. **Never run BGM continuously across every scene.** Music is only as powerful as the silence that precedes it. Wall-to-wall BGM induces auditory fatigue and weakens dramatic stakes.
 2. **Keep pure diegetic silence (NO BGM) for**:
-   - Administrative deadlines, ticking clocks (e.g. 4:55 PM), and heavy mechanical stamp thuds.
-   - Hushed gossiping corridors, whispering student clusters, and forum phone chat screens.
-   - Confrontations, standoffs, and verbal dominance: cut to **DEAD SILENCE** when a bully steps into the protagonist's path so calm, assertive dialogue commands absolute moral authority.
+   - Administrative deadlines, countdown clocks, and heavy mechanical document thuds.
+   - Hushed gossiping corridors, whispering groups, and forum phone chat screens.
+   - Confrontations, standoffs, and verbal dominance: cut to **DEAD SILENCE** when an adversary steps into the protagonist's path so calm, assertive dialogue commands absolute moral authority.
 3. **Motivated BGM Placement Only**:
-   - *Track 1 (System Euphoria)*: Peaks at -8 dBFS on system reward triggers & balance dings.
-   - *Track 2 (Ella’s Grace)*: Strictly -16 to -18 dBFS under dialogue (tender romance, relief).
-   - *Track 3 (Cold Resolve)*: Leveled at -14 to -16 dBFS (unbothered underdog swagger walk).
-   - *Track 4 (Whispers & Suspicion)*: Ducked to -20 dBFS during dialogue, swelling to -10 to -12 dBFS on villain entrances and cliffhangers.
+   - *Track 1 (Climactic Triumph / Reward Swell)*: Peaks at -8 dBFS on reward triggers & breakthrough dings.
+   - *Track 2 (Emotional Core / Romance)*: Strictly -16 to -18 dBFS under dialogue (tender bond, relief).
+   - *Track 3 (Underdog Resolve / Swagger)*: Leveled at -14 to -16 dBFS (unbothered swagger walk / quiet confidence).
+   - *Track 4 (Suspicion & Antagonist Intrigue)*: Ducked to -20 dBFS during dialogue, swelling to -10 to -12 dBFS on villain entrances and cliffhangers.
    - 1.2 kHz parametric notch scoop (`equalizer=f=1200:t=q:w=1.5:g=-3.5`) on all BGM tracks.
 4. **Strictly NO SFX**: Zero synthetic whooshes, braams, or gongs. Dialogue and authentic clip foley lead the mix (-14 to -15 LUFS).
 5. **Motivated Transitions**: Hard cuts across continuous dialogue/action; 0.4s–0.5s dips to black for scene/act shifts; 1.5s freeze-frame hold on cliffhangers.

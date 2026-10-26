@@ -29,14 +29,14 @@ When John says **"Edit this mini drama series"** (or provides an episodic drama 
 2. Ingest the 4-track Signature BGM Suite with **Silence vs. Music Discipline (Anti-Wall-to-Wall BGM Rule)**:
    - **DO NOT play BGM wall-to-wall in every scene**. Music is only as powerful as the silence that precedes it.
    - **Keep in pure diegetic silence (NO BGM)**:
-     * Administrative deadlines, ticking clocks (e.g. 4:55 PM), and heavy mechanical stamp thuds.
+     * Administrative deadlines, ticking clocks, and heavy mechanical stamp/document thuds.
      * Hushed gossiping corridors, whispering student clusters, and forum phone chat screens.
-     * Confrontations, standoffs, and verbal dominance: cut to **DEAD SILENCE** when a bully steps in so resonant spoken dialogue commands absolute moral authority.
+     * Confrontations, standoffs, and verbal dominance: cut to **DEAD SILENCE** when an adversary steps in so resonant spoken dialogue commands absolute moral authority.
    - **Score ONLY when specifically motivated by story progression**:
-     * Track 1 (System Euphoria): Peaks at **-8 dBFS** on system reward triggers & balance dings.
-     * Track 2 (Ella’s Grace): Strictly **-16 dBFS to -18 dBFS under dialogue** (tender romance, relief).
-     * Track 3 (Cold Resolve): Leveled at **-14 dBFS to -16 dBFS** (unbothered underdog swagger walk).
-     * Track 4 (Whispers & Suspicion): Ducked to **-20 dBFS** during dialogue, swelling to **-10 dBFS to -12 dBFS** on cliffhangers (Basti/Celine villain intrigue).
+     * Track 1 (Climactic Triumph / Reward Swell): Peaks at **-8 dBFS** on system reward triggers & breakthrough dings.
+     * Track 2 (Emotional Core / Romance): Strictly **-16 dBFS to -18 dBFS under dialogue** (tender gratitude, relief).
+     * Track 3 (Underdog Resolve): Leveled at **-14 dBFS to -16 dBFS** (unbothered swagger walk / quiet confidence).
+     * Track 4 (Suspicion & Antagonist Intrigue): Ducked to **-20 dBFS** during dialogue, swelling to **-10 dBFS to -12 dBFS** on cliffhangers (villain entrances & staredowns).
    - Notch filter: 1.2 kHz parametric notch scoop (`equalizer=f=1200:t=q:w=1.5:g=-3.5`) across all BGM for crisp voice intelligibility.
 3. STRICTLY NO SFX (dialogue primacy). Voice mastered to -14 to -15 LUFS / -1.5 True Peak with 80Hz highpass and +2.5dB at 2.8kHz.
 4. Cinematic color grading (filmic S-curve, lifted deep blacks, teal shadows, warm midtones).
